@@ -1,0 +1,874 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-animation: body 5s;
+          animation: body 5s;
+}
+
+.slider {
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider .element {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  left: -100%;
+  -webkit-transition: left 1s cubic-bezier(0.76, 0.09, 0.32, 0.94);
+  transition: left 1s cubic-bezier(0.76, 0.09, 0.32, 0.94);
+}
+
+.element.active {
+  z-index: 2;
+  left: 0px;
+}
+
+.element.start-out {
+  z-index: 1;
+}
+
+/* ------Barra de navegacion------ */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 100%;
+  z-index: 99;
+  position: fixed;
+}
+
+nav:hover {
+  background: black;
+}
+
+nav:hover a {
+  color: White;
+}
+
+nav img {
+  width: 100%;
+}
+
+nav .logo {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-size: 70px;
+  color: white;
+  left: 50%;
+  width: 300px;
+  /* height: 200px; */
+}
+
+nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav .nav-links li {
+  list-style: none;
+}
+
+nav .nav-links li a {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  font-size: 17px;
+  color: white;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  text-decoration: none;
+}
+
+nav .nav-links li a::before {
+  content: '';
+  position: absolute;
+  background: #fef401;
+  width: 0;
+  left: 0px;
+  bottom: -10px;
+  height: 1px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: -2;
+}
+
+nav .nav-links li a:hover::before {
+  width: 100%;
+  height: 1px;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.banner .content {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  text-align: center;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: 400;
+  background: rgba(0, 0, 0, 0.582);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .content img {
+  width: 20%;
+}
+
+.banner .content p {
+  font-size: 50px;
+  width: 70%;
+  color: #d2d2d2;
+}
+
+/* -----Contenedor de proyectos----- */
+/* -----Estilos generales del contenedor----- */
+.main-container {
+  height: 100vh;
+  /* -----Imagen de fondo individual----- */
+}
+
+.main-container .full-bg-img {
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* -----Estilos de texto dentro de imagen hero----- */
+}
+
+.main-container .full-bg-img .bg-text-content {
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
+  width: 70%;
+  color: white;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.main-container .full-bg-img .bg-text-content h2 {
+  font-size: 100px;
+  margin: -2%;
+  text-shadow: 0.7px 0.7px 10px rgba(0, 0, 0, 0.356);
+}
+
+.main-container .full-bg-img .bg-text-content p {
+  font-size: 23px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.main-container .full-bg-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container .full-bg-text .bg-text-content {
+  margin-left: 10%;
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
+  width: 40%;
+  color: white;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: 400;
+  text-align: left;
+}
+
+.main-container .full-bg-text .bg-text-content h2 {
+  line-height: 100px;
+  margin: 0;
+}
+
+.main-container .full-bg-text-right {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container .full-bg-text-right .bg-text-content {
+  margin-right: 5%;
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
+  width: 40%;
+  color: white;
+  font-family: 'Darker Grotesque', sans-serif;
+  text-align: right;
+}
+
+.main-container .full-bg-text-right .bg-text-content h2 {
+  font-size: 18px;
+  margin-right: 0;
+  margin-bottom: 30px;
+}
+
+.main-container .full-bg-text-right .bg-text-content p {
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.main-container .full-bg-what-we-do {
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 30s ease;
+  transition: all 30s ease;
+  /* -----Estilos de texto dentro de imagen hero----- */
+}
+
+.main-container .full-bg-what-we-do .bg-text-content {
+  margin-left: -40%;
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
+  width: 40%;
+  color: black;
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+.main-container .full-bg-what-we-do .bg-text-content h2 {
+  font-size: 85px;
+  line-height: 70px;
+  margin: 0;
+  text-shadow: none;
+}
+
+.main-container .full-bg-what-we-do .bg-text-content p {
+  font-weight: 300;
+  margin: 0;
+  font-size: 22px;
+}
+
+.main-container .full-bg-what-we-do .bg-text-content2 {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
+  width: 100%;
+  color: black;
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+.main-container .full-bg-what-we-do .bg-text-content2 h2 {
+  font-size: 60px;
+  line-height: 50px;
+  margin: 0;
+  text-shadow: none;
+}
+
+.main-container .full-bg-what-we-do .bg-text-content2 .d1,
+.main-container .full-bg-what-we-do .bg-text-content2 .d2,
+.main-container .full-bg-what-we-do .bg-text-content2 .d3 {
+  margin: 2%;
+  padding: 10px;
+}
+
+.main-container .full-bg-what-we-do .bg-text-content2 .d1 ul li,
+.main-container .full-bg-what-we-do .bg-text-content2 .d2 ul li,
+.main-container .full-bg-what-we-do .bg-text-content2 .d3 ul li {
+  list-style: none;
+  font-size: 20px;
+}
+
+.main-container .full-bg-what-we-do .bg-text-content2 .d1 h2,
+.main-container .full-bg-what-we-do .bg-text-content2 .d2 h2,
+.main-container .full-bg-what-we-do .bg-text-content2 .d3 h2 {
+  font-size: 60px;
+}
+
+.main-container .contacto {
+  height: 100%;
+  width: 100%;
+  background: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.main-container .contacto .info {
+  font-family: 'Darker Grotesque', sans-serif;
+  -webkit-transform: translateY(40%);
+          transform: translateY(40%);
+  margin: 4%;
+}
+
+.main-container .contacto .info img {
+  width: 100px;
+  margin: 0;
+}
+
+.main-container .contacto .info h2 {
+  margin-bottom: 30px;
+  font-size: 19px;
+}
+
+.main-container .contacto .info p {
+  font-size: 18px;
+}
+
+.main-container .contacto .info ul li {
+  font-size: 18px;
+  list-style: none;
+  margin-left: -40px;
+  margin-bottom: 2px;
+  color: rgba(255, 255, 255, 0.521);
+  font-weight: 400;
+}
+
+.main-container .contacto .info ul li a {
+  color: rgba(255, 255, 255, 0.521);
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.main-container .contacto .info ul li a:hover {
+  color: white;
+}
+
+.main-container .contacto .info ul li a::before {
+  content: '';
+  position: absolute;
+  background: #fef401;
+  width: 0;
+  left: 0px;
+  bottom: -5px;
+  height: 1px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: -2;
+}
+
+.main-container .contacto .info ul li a:hover::before {
+  width: 100%;
+  height: 1px;
+}
+
+.main-container .full-bg-spaces {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.295))), url("../images/Terraza.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.295)), url("../images/Terraza.jpg");
+}
+
+.main-container .full-bg-about-us {
+  background-image: url("../images/Herrería.jpg");
+}
+
+.main-container .full-bg-artistas {
+  background-image: url("../images/Artesanos.jpg");
+}
+
+.main-container .full-bg-img1 {
+  background-image: url("../images/5-Liquorstore/Aerea-min.jpg");
+}
+
+.main-container .full-bg-img2 {
+  background-image: url("../images/Casa-DM/Fachada-min.jpg");
+}
+
+.main-container .full-bg-img3 {
+  background-image: url("../images/Casa-DS/Alberca-min.jpg");
+}
+
+.main-container .full-bg-img4 {
+  background-image: url("../images/Cup-d_État/Interior Marzocco.jpg");
+}
+
+.main-container .full-bg-img5 {
+  background-image: url("../images/Torre-Galia/cocina-comedor-min.jpg");
+}
+
+.main-container .full-bg-img6 {
+  background-image: url("../images/Insurgentes-22/Oficina-1.jpg");
+}
+
+@-webkit-keyframes body {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes body {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  margin: 5px;
+  -webkit-transition: 0.4s all cubic-bezier(0.97, 0.06, 0.48, 0.86);
+  transition: 0.4s all cubic-bezier(0.97, 0.06, 0.48, 0.86);
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  nav .logo {
+    margin-left: 20px;
+  }
+  nav .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: -1;
+    width: 100%;
+    top: -20%;
+    height: 100vh;
+    position: absolute;
+    background: black;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: 0.8s all cubic-bezier(0.97, 0.06, 0.48, 0.86);
+    transition: 0.8s all cubic-bezier(0.97, 0.06, 0.48, 0.86);
+  }
+  nav .nav-links li {
+    margin: 10px;
+    opacity: 0;
+  }
+  nav .nav-links li a {
+    font-size: 35px;
+    font-weight: 700;
+  }
+  nav .nav-active {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+  /* .nav-links {
+        z-index: -1;
+        position: absolute;
+        height: 100vh;
+        top: -20%;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateY(-100%);
+        transition: 0.8s all cubic-bezier(.97, .06, .48, .86);
+        padding: 50px;
+        li {
+            opacity: 0;
+            a {
+                color: black;
+                font-size: 30px;
+            }
+        }
+    } */
+  .burger {
+    display: block;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .burger div {
+    background-color: white;
+  }
+  @-webkit-keyframes navLinkFade {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+  }
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+  }
+  .toggle .line1 {
+    -webkit-transform: rotate(-223deg) translate(13px, -7px);
+            transform: rotate(-223deg) translate(13px, -7px);
+    height: 2px;
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    -webkit-transform: rotate(223deg) translate(3px, -3px);
+            transform: rotate(223deg) translate(3px, -3px);
+    height: 2px;
+  }
+  .banner .content p {
+    font-size: 25px;
+    width: 70%;
+  }
+  .main-container .full-bg-img {
+    background-attachment: scroll;
+    /* -----Estilos de texto dentro de imagen hero----- */
+  }
+  .main-container .full-bg-img .bg-text-content h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .main-container .full-bg-img .bg-text-content p {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .main-container .full-bg-text {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .main-container .full-bg-text .bg-text-content {
+    margin-left: 7%;
+    margin-bottom: 7%;
+    width: 70%;
+    color: white;
+  }
+  .main-container .full-bg-text .bg-text-content h2 {
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .main-container .full-bg-text .bg-text-content p {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .main-container .full-bg-what-we-do {
+    overflow: hidden;
+    background-attachment: scroll;
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    /* -----Estilos de texto dentro de imagen hero----- */
+  }
+  .main-container .full-bg-what-we-do .bg-text-content {
+    margin: auto;
+    margin-bottom: 0;
+    -webkit-transition: all 3s ease;
+    transition: all 3s ease;
+    width: 70%;
+    padding: 20px;
+    color: black;
+    font-family: 'Darker Grotesque', sans-serif;
+  }
+  .main-container .full-bg-what-we-do .bg-text-content h2 {
+    font-size: 45px;
+    line-height: 40px;
+    margin: 0;
+    text-shadow: none;
+    text-align: center;
+  }
+  .main-container .full-bg-what-we-do .bg-text-content p {
+    text-align: center;
+    font-weight: 300;
+    margin: 0;
+    font-size: 18px;
+  }
+  .main-container .full-bg-what-we-do .bg-text-content2 {
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 10px;
+    -webkit-transition: all 3s ease;
+    transition: all 3s ease;
+    width: 100%;
+    color: black;
+    font-family: 'Darker Grotesque', sans-serif;
+  }
+  .main-container .full-bg-what-we-do .bg-text-content2 .d1,
+  .main-container .full-bg-what-we-do .bg-text-content2 .d2,
+  .main-container .full-bg-what-we-do .bg-text-content2 .d3 {
+    width: 100%;
+    margin: 0;
+  }
+  .main-container .full-bg-what-we-do .bg-text-content2 .d1 ul,
+  .main-container .full-bg-what-we-do .bg-text-content2 .d2 ul,
+  .main-container .full-bg-what-we-do .bg-text-content2 .d3 ul {
+    padding: 0;
+  }
+  .main-container .full-bg-what-we-do .bg-text-content2 .d1 ul li,
+  .main-container .full-bg-what-we-do .bg-text-content2 .d2 ul li,
+  .main-container .full-bg-what-we-do .bg-text-content2 .d3 ul li {
+    list-style: none;
+    font-size: 18px;
+    text-align: center;
+  }
+  .main-container .full-bg-what-we-do .bg-text-content2 .d1 h2,
+  .main-container .full-bg-what-we-do .bg-text-content2 .d2 h2,
+  .main-container .full-bg-what-we-do .bg-text-content2 .d3 h2 {
+    line-height: 30px;
+    margin: 0;
+    text-shadow: none;
+    text-align: center;
+    font-size: 30px;
+  }
+  .main-container .full-bg-what-we-do .bg-text-content2 .d3 {
+    margin-top: -10%;
+  }
+  .main-container .contacto {
+    height: 100%;
+    width: 100%;
+    background: black;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .main-container .contacto .info {
+    font-family: 'Darker Grotesque', sans-serif;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    width: 45%;
+    height: auto;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-container .contacto .info p {
+    text-align: center;
+    font-size: 17px;
+  }
+  .main-container .contacto .info img {
+    text-align: center;
+    width: 100px;
+  }
+  .main-container .contacto .info h2 {
+    margin-bottom: 0;
+    font-size: 18px;
+    text-align: center;
+  }
+  .main-container .contacto .info ul li {
+    color: rgba(255, 255, 255, 0.521);
+    text-align: center;
+    font-size: 17px;
+    list-style: none;
+    margin-left: -40px;
+    margin-bottom: 0;
+  }
+  .main-container .contacto .info ul li a {
+    color: rgba(255, 255, 255, 0.521);
+    text-decoration: none;
+    position: relative;
+  }
+  .main-container .contacto .info ul li a::before {
+    content: '';
+    position: absolute;
+    background: #fef401;
+    width: 0;
+    left: 0px;
+    bottom: -1px;
+    height: 1px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: -2;
+  }
+  .main-container .contacto .info ul li a:hover::before {
+    width: 100%;
+    height: 1px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
