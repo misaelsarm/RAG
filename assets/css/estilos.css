@@ -23,6 +23,68 @@ body {
   max-height: 100vh;
   position: relative;
   overflow: hidden;
+  /* -----5-Liquorstore----- */
+  /* .liquorstore-1 {
+    background-image: url("../images/Proyectos/5-Liquorstore/5L_00-min.jpg");
+  }
+
+  .liquorstore-2 {
+    background-image: url("../images/Proyectos/5-Liquorstore/5L_01-min.jpg");
+  }
+  .liquorstore-3 {
+    background-image: url("../images/Proyectos/5-Liquorstore/5L_02-min.jpg");
+  }
+ */
+  /* -----Casa DM----- */
+  /*  .casaDM-1 {
+    background-image: url("../images/Proyectos/Casa-DM/DM_00-min.jpg");
+  }
+  .casaDM-2 {
+    background-image: url("../images/Proyectos/Casa-DM/DM_01-min.jpg");
+  }
+  .casaDM-3 {
+    background-image: url("../images/Proyectos/Casa-DM/DM_02-min.jpg");
+  } */
+  /* -----Casa DS----- */
+  /*   .casaDS-1 {
+    background-image: url("../images/Proyectos/Casa-DS/DS_00-min.jpg");
+  }
+  .casaDS-2 {
+    background-image: url("../images/Proyectos/Casa-DS/DS_01-min.jpg");
+  }
+  .casaDS-3 {
+    background-image: url("../images/Proyectos/Casa-DS/DS_02-min.jpg");
+  } */
+  /* -----Cup d Etat----- */
+  /*   .CE1 {
+    background-image: url("../images/Proyectos/Cup-d_État/CE_00.jpg");
+  }
+  .CE2 {
+    background-image: url("../images/Proyectos/Cup-d_État/CE_01.jpg");
+  }
+  .CE3 {
+    background-image: url("../images/Proyectos/Cup-d_État/CE_02.jpg");
+  } */
+  /* -----Insurgentes 22----- */
+  /* .I22 {
+    background-image: url("../images/Proyectos/Insurgentes-22/I22_00.jpg");
+  }
+  .I22 {
+    background-image: url("../images/Proyectos/Insurgentes-22/I22_01.jpg");
+  }
+  .I22 {
+    background-image: url("../images/Proyectos/Insurgentes-22/I22_02.jpg");
+  } */
+  /* -----Torre Galia----- */
+  /* .TG-1 {
+    background-image: url("../images/Proyectos/Torre-Galia/TG_00-min.jpg");
+  }
+  .TG-2 {
+    background-image: url("../images/Proyectos/Torre-Galia/TG_01-min.jpg");
+  }
+  .TG-3 {
+    background-image: url("../images/Proyectos/Torre-Galia/TG_02-min.jpg");
+  } */
 }
 
 .slider .element {
@@ -243,7 +305,7 @@ nav .nav-links li a:hover::before {
 .main-container .full-bg-img .bg-text-content p {
   font-size: 23px;
   margin: 0;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 .main-container .full-bg-text {
@@ -485,30 +547,6 @@ nav .nav-links li a:hover::before {
 
 .main-container .full-bg-artistas {
   background-image: url("../images/Artesanos.jpg");
-}
-
-.main-container .full-bg-img1 {
-  background-image: url("../images/5-Liquorstore/Aerea-min.jpg");
-}
-
-.main-container .full-bg-img2 {
-  background-image: url("../images/Casa-DM/Fachada-min.jpg");
-}
-
-.main-container .full-bg-img3 {
-  background-image: url("../images/Casa-DS/Alberca-min.jpg");
-}
-
-.main-container .full-bg-img4 {
-  background-image: url("../images/Cup-d_État/Interior Marzocco.jpg");
-}
-
-.main-container .full-bg-img5 {
-  background-image: url("../images/Torre-Galia/cocina-comedor-min.jpg");
-}
-
-.main-container .full-bg-img6 {
-  background-image: url("../images/Insurgentes-22/Oficina-1.jpg");
 }
 
 @-webkit-keyframes body {
