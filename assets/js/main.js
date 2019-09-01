@@ -97,7 +97,7 @@ const navSlide = () => {
 
 navSlide();
 
-let elements = document.querySelectorAll('.element');
+/* let elements = document.querySelectorAll('.element');
 let currentIndex = -1;
 setInterval(next, 5000);
 
@@ -128,4 +128,4 @@ function moveActive(activeElement) {
 
 }
 
-next();
+next(); */
