@@ -166,6 +166,48 @@ nav .nav-links li a:hover::before {
 }
 
 /* -----Contenedor de proyectos----- */
+/* .carousel-container,
+.carousel-container2 {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.carousel-slide,
+.carousel-slide2 {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    img {
+        height: 100%;
+        width: 100vw;
+    }
+}
+
+.prevBtn,
+.prevBtn2 {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    width: 50px;
+    left: 1%;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+.nextBtn,
+.nextBtn2 {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 1%;
+    width: 50px;
+    cursor: pointer;
+    transform: rotate(-90deg);
+}
+ */
 /* -----Estilos generales del contenedor----- */
 .main-container {
   height: 100vh;
@@ -214,127 +256,6 @@ nav .nav-links li a:hover::before {
   font-size: 23px;
   margin: 0;
   font-weight: 300;
-}
-
-.main-container .carousel-indicators li {
-  height: 3px !important;
-}
-
-.main-container .carousel-item {
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease;
-}
-
-.main-container .carousel-item .item-image {
-  height: 100vh !important;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.main-container .carousel-item .bg-text-content {
-  width: 70%;
-  color: white;
-  font-family: "Darker Grotesque", sans-serif;
-  text-align: center;
-}
-
-.main-container .carousel-item .bg-text-content h2 {
-  font-weight: bold;
-  font-size: 100px;
-  margin: -2%;
-  text-shadow: 0.7px 0.7px 10px rgba(0, 0, 0, 0.356);
-}
-
-.main-container .carousel-item .bg-text-content p {
-  font-size: 23px;
-  margin: 0;
-  font-weight: 300;
-}
-
-.main-container .item-image1 {
-  background: url("../images/Torre-Galia/TG_00-min.jpg");
-}
-
-.main-container .item-image2 {
-  background: url("../images/Torre-Galia/TG_01-min.jpg");
-}
-
-.main-container .item-image3 {
-  background: url("../images/Torre-Galia/TG_02-min.jpg");
-}
-
-.main-container .item-image4 {
-  background: url("../images/5-Liquorstore/5L_00-min.jpg");
-}
-
-.main-container .item-image5 {
-  background: url("../images/5-Liquorstore/5L_01-min.jpg");
-}
-
-.main-container .item-image6 {
-  background: url("../images/5-Liquorstore/5L_02-min.jpg");
-}
-
-.main-container .item-image7 {
-  background: url("../images/Cup-d_État/CE_00.jpg");
-}
-
-.main-container .item-image8 {
-  background: url("../images/Cup-d_État/CE_01.jpg");
-}
-
-.main-container .item-image9 {
-  background: url("../images/Cup-d_État/CE_02.jpg");
-}
-
-.main-container .item-image10 {
-  background: url("../images/Casa-DS/DS_00-min.jpg");
-}
-
-.main-container .item-image11 {
-  background: url("../images/Casa-DS/DS_01-min.jpg");
-}
-
-.main-container .item-image12 {
-  background: url("../images/Casa-DS/DS_02-min.jpg");
-}
-
-.main-container .item-image13 {
-  background: url("../images/Casa-DM/DM_00-min.jpg");
-}
-
-.main-container .item-image14 {
-  background: url("../images/Casa-DM/DM_01-min.jpg");
-}
-
-.main-container .item-image15 {
-  background: url("../images/Casa-DM/DM_02-min.jpg");
-}
-
-.main-container .item-image16 {
-  background: url("../images/Insurgentes-22/I22_00.jpg");
-}
-
-.main-container .item-image17 {
-  background: url("../images/Insurgentes-22/I22_01.jpg");
-}
-
-.main-container .item-image18 {
-  background: url("../images/Insurgentes-22/I22_02.jpg");
 }
 
 .main-container .full-bg-text {

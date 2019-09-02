@@ -58,12 +58,6 @@ function aContact() {
     contact.style.visibility = 'visible';
 }
 
-/*  function textUp() {
-    text.style.opacity = '1';
-    text.style.transform = 'translateY(0px)';
-} 
- */
-
 setTimeout(aIndex, 1000);
 setTimeout(aWork, 1200);
 setTimeout(aAbout, 1400);
@@ -97,35 +91,53 @@ const navSlide = () => {
 
 navSlide();
 
-/* let elements = document.querySelectorAll('.element');
-let currentIndex = -1;
-setInterval(next, 5000);
+
+const carouselSlide = document.querySelector('.carousel-slide');
+const carouselImages = document.querySelectorAll('.carousel-slide img');
+console.log(carouselImages);
+
+//Buttons
+
+const prevBtn = document.querySelector('#prevBtn');
+const nextBtn = document.querySelector('#nextBtn');
 
 
-function next() {
-    currentIndex = currentIndex + 1;
+let counter = 1;
+const size = carouselImages[0].clientWidth;
 
-    if (currentIndex >= elements.length) {
-        currentIndex = 0;
+carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+
+//Button listeners
+
+nextBtn.addEventListener('click', () => {
+    if (counter >= carouselImages.length - 1) return;
+    carouselSlide.style.transition = "transform 2s ease";
+    /* carouselSlide.style.transition = "transform 1s cubic-bezier(1, .16, .39, .87)"; */
+    counter++;
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
+
+prevBtn.addEventListener('click', () => {
+    if (counter <= 0) return;
+    carouselSlide.style.transition = "transform 2s ease";
+    counter--;
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
+
+
+carouselSlide.addEventListener('transitionend', () => {
+    if (carouselImages[counter].id === 'lastClone') {
+        carouselSlide.style.transition = "none";
+        counter = carouselImages.length - 2;
+        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
     }
 
-    let el = elements[currentIndex];
+    if (carouselImages[counter].id === 'firstClone') {
+        carouselSlide.style.transition = "none";
+        counter = carouselImages.length - counter;
+        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
-    let activeElement = document.querySelector('.element.active');
-
-    if (activeElement) {
-        activeElement.classList.add('start-out');
-
-        setTimeout(moveActive, 2000, activeElement);
     }
-
-    el.classList.add('active');
-}
-
-function moveActive(activeElement) {
-    activeElement.classList.remove('active');
-    activeElement.classList.remove('start-out');
-
-}
-
-next(); */
+});

@@ -130,6 +130,48 @@ nav {
 
 /* -----Contenedor de proyectos----- */
 
+/* .carousel-container,
+.carousel-container2 {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.carousel-slide,
+.carousel-slide2 {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    img {
+        height: 100%;
+        width: 100vw;
+    }
+}
+
+.prevBtn,
+.prevBtn2 {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    width: 50px;
+    left: 1%;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+.nextBtn,
+.nextBtn2 {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 1%;
+    width: 50px;
+    cursor: pointer;
+    transform: rotate(-90deg);
+}
+ */
 
 /* -----Estilos generales del contenedor----- */
 
@@ -167,97 +209,6 @@ nav {
                 font-weight: 300;
             }
         }
-    }
-    .carousel-indicators {
-        li {
-            height: 3px !important;
-        }
-    }
-    .carousel-item {
-        transition: 1s all ease;
-        .item-image {
-            height: 100vh !important;
-            width: 100%;
-            background-size: cover;
-            background-position: center;
-            // background-attachment: fixed;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-        .bg-text-content {
-            width: 70%;
-            //  background: yellow;
-            color: white;
-            font-family: "Darker Grotesque", sans-serif;
-            text-align: center;
-            h2 {
-                font-weight: bold;
-                font-size: 100px;
-                margin: -2%;
-                text-shadow: 0.7px 0.7px 10px rgba(0, 0, 0, 0.356);
-            }
-            p {
-                font-size: 23px;
-                margin: 0;
-                font-weight: 300;
-            }
-        }
-    }
-    .item-image1 {
-        background: url('../images/Torre-Galia/TG_00-min.jpg');
-    }
-    .item-image2 {
-        background: url('../images/Torre-Galia/TG_01-min.jpg');
-    }
-    .item-image3 {
-        background: url('../images/Torre-Galia/TG_02-min.jpg');
-    }
-    .item-image4 {
-        background: url('../images/5-Liquorstore/5L_00-min.jpg');
-    }
-    .item-image5 {
-        background: url('../images/5-Liquorstore/5L_01-min.jpg');
-    }
-    .item-image6 {
-        background: url('../images/5-Liquorstore/5L_02-min.jpg');
-    }
-    .item-image7 {
-        background: url('../images/Cup-d_État/CE_00.jpg');
-    }
-    .item-image8 {
-        background: url('../images/Cup-d_État/CE_01.jpg');
-    }
-    .item-image9 {
-        background: url('../images/Cup-d_État/CE_02.jpg');
-    }
-    .item-image10 {
-        background: url('../images/Casa-DS/DS_00-min.jpg');
-    }
-    .item-image11 {
-        background: url('../images/Casa-DS/DS_01-min.jpg');
-    }
-    .item-image12 {
-        background: url('../images/Casa-DS/DS_02-min.jpg');
-    }
-    .item-image13 {
-        background: url('../images/Casa-DM/DM_00-min.jpg');
-    }
-    .item-image14 {
-        background: url('../images/Casa-DM/DM_01-min.jpg');
-    }
-    .item-image15 {
-        background: url('../images/Casa-DM/DM_02-min.jpg');
-    }
-    .item-image16 {
-        background: url('../images/Insurgentes-22/I22_00.jpg');
-    }
-    .item-image17 {
-        background: url('../images/Insurgentes-22/I22_01.jpg');
-    }
-    .item-image18 {
-        background: url('../images/Insurgentes-22/I22_02.jpg');
     }
     /* -----Imagen de fondo individual----- */
     .full-bg-text {

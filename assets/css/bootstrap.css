@@ -6541,6 +6541,7 @@ a.close.disabled {
 .carousel-item-next,
 .carousel-item-prev {
     display: block;
+    background-attachment: fixed;
 }
 
 .carousel-item-next:not(.carousel-item-left),
@@ -6567,6 +6568,7 @@ a.close.disabled {
 .carousel-fade .carousel-item-prev.carousel-item-right {
     z-index: 1;
     opacity: 1;
+    background-attachment: fixed;
 }
 
 .carousel-fade .active.carousel-item-left,
