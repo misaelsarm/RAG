@@ -166,48 +166,6 @@ nav .nav-links li a:hover::before {
 }
 
 /* -----Contenedor de proyectos----- */
-/* .carousel-container,
-.carousel-container2 {
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-    background-attachment: fixed;
-}
-
-.carousel-slide,
-.carousel-slide2 {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    img {
-        height: 100%;
-        width: 100vw;
-    }
-}
-
-.prevBtn,
-.prevBtn2 {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    width: 50px;
-    left: 1%;
-    cursor: pointer;
-    transform: rotate(90deg);
-}
-
-.nextBtn,
-.nextBtn2 {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    right: 1%;
-    width: 50px;
-    cursor: pointer;
-    transform: rotate(-90deg);
-}
- */
 /* -----Estilos generales del contenedor----- */
 .main-container {
   height: 100vh;
@@ -256,6 +214,196 @@ nav .nav-links li a:hover::before {
   font-size: 23px;
   margin: 0;
   font-weight: 300;
+}
+
+.main-container #slideshow {
+  overflow: hidden;
+}
+
+.main-container #slideshow div {
+  width: 100vw;
+  height: 100vh;
+  /* -----Cup d etat----- */
+  /* -----Casa DS----- */
+  /* -----Casa DM----- */
+  /* -----Insurgentes 22----- */
+}
+
+.main-container #slideshow div .torre-galia,
+.main-container #slideshow div .liquorstore,
+.main-container #slideshow div .casa-ds,
+.main-container #slideshow div .casa-dm,
+.main-container #slideshow div .cup-d-etat,
+.main-container #slideshow div .insurgentes {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-container #slideshow div .torre-galia .bg-text-content,
+.main-container #slideshow div .liquorstore .bg-text-content,
+.main-container #slideshow div .casa-ds .bg-text-content,
+.main-container #slideshow div .casa-dm .bg-text-content,
+.main-container #slideshow div .cup-d-etat .bg-text-content,
+.main-container #slideshow div .insurgentes .bg-text-content {
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
+  width: 50%;
+  height: auto;
+  color: white;
+  font-family: "Darker Grotesque", sans-serif;
+  text-align: center;
+}
+
+.main-container #slideshow div .torre-galia .bg-text-content h2,
+.main-container #slideshow div .liquorstore .bg-text-content h2,
+.main-container #slideshow div .casa-ds .bg-text-content h2,
+.main-container #slideshow div .casa-dm .bg-text-content h2,
+.main-container #slideshow div .cup-d-etat .bg-text-content h2,
+.main-container #slideshow div .insurgentes .bg-text-content h2 {
+  font-weight: bold;
+  font-size: 100px;
+  margin: 0;
+  text-shadow: 0.7px 0.7px 10px rgba(0, 0, 0, 0.356);
+}
+
+.main-container #slideshow div .torre-galia .bg-text-content p,
+.main-container #slideshow div .liquorstore .bg-text-content p,
+.main-container #slideshow div .casa-ds .bg-text-content p,
+.main-container #slideshow div .casa-dm .bg-text-content p,
+.main-container #slideshow div .cup-d-etat .bg-text-content p,
+.main-container #slideshow div .insurgentes .bg-text-content p {
+  font-size: 23px;
+  margin-top: -3%;
+  font-weight: 400;
+}
+
+.main-container #slideshow div .torre-galia-1 {
+  background: url("../images/Torre-Galia/TG_00-min.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .torre-galia-2 {
+  background: url("../images/Torre-Galia/TG_01-min.jpg");
+  background-size: cover;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main-container #slideshow div .torre-galia-2 .bg-text-content h2 {
+  background: rgba(0, 0, 0, 0.342);
+}
+
+.main-container #slideshow div .torre-galia-3 {
+  background: url("../images/Torre-Galia/TG_02-min.jpg");
+  background-size: cover;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main-container #slideshow div .torre-galia-3 .bg-text-content h2 {
+  background: rgba(0, 0, 0, 0.342);
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.main-container #slideshow div .liquorstore-1 {
+  background: url("../images/5-Liquorstore/5L_00-min.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .liquorstore-2 {
+  background: url("../images/5-Liquorstore/5L_01-min.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .liquorstore-3 {
+  background: url("../images/5-Liquorstore/5L_02-min.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .cup-d-etat-1 {
+  background: url("../images/Cup-d_État/CE_00.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .cup-d-etat-2 {
+  background: url("../images/Cup-d_État/CE_01.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .cup-d-etat-3 {
+  background: url("../images/Cup-d_État/CE_02.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .casa-ds-1 {
+  background: url("../images/Casa-DS/DS_00-min.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .casa-ds-2 {
+  background: url("../images/Casa-DS/DS_01-min.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .casa-ds-3 {
+  background: url("../images/Casa-DS/DS_02-min.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .casa-dm-1 {
+  background: url("../images/Casa-DM/DM_00-min.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .casa-dm-2 {
+  background: url("../images/Casa-DM/DM_01-min.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .casa-dm-3 {
+  background: url("../images/Casa-DM/DM_02-min.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .insurgentes-1 {
+  background: url("../images/Insurgentes-22/I22_00.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .insurgentes-2 {
+  background: url("../images/Insurgentes-22/I22_01.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .insurgentes-3 {
+  background: url("../images/Insurgentes-22/I22_02.jpg");
+  background-size: cover;
 }
 
 .main-container .full-bg-text {
@@ -426,12 +574,13 @@ nav .nav-links li a:hover::before {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-container .contacto .info {
   font-family: "Darker Grotesque", sans-serif;
-  -webkit-transform: translateY(40%);
-          transform: translateY(40%);
   margin: 4%;
 }
 
@@ -453,7 +602,7 @@ nav .nav-links li a:hover::before {
   font-size: 18px;
   list-style: none;
   margin-left: -40px;
-  margin-bottom: 2px;
+  margin-bottom: px;
   color: rgba(255, 255, 255, 0.521);
   font-weight: 400;
 }
@@ -476,11 +625,11 @@ nav .nav-links li a:hover::before {
   background: #fef401;
   width: 0;
   left: 0px;
-  bottom: -5px;
+  bottom: -3px;
   height: 1px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  z-index: -2;
+  z-index: 0;
 }
 
 .main-container .contacto .info ul li a:hover::before {

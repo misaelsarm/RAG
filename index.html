@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./assets/css/estilos.css" />
     <link rel="stylesheet" href="./assets/css/aos.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
     <title>RAG Arquitectos</title>
 </head>
 
@@ -20,9 +20,9 @@
             <img src="./assets/images/icons/Firma RAG Blanco.png" alt="" />
         </div>
         <ul class="nav-links">
-            <li><a id="index" href="#home-intro">Home</a></li>
-            <li><a id="work" href="#projects-intro">Proyectos</a></li>
-            <li><a id="about" href="#about-us-intro">Acerca de</a></li>
+            <li><a id="index" href="#home">Home</a></li>
+            <li><a id="work" href="#projects">Proyectos</a></li>
+            <li><a id="about" href="#about-us">About us</a></li>
             <li><a id="contact" href="#contact-info">Contacto</a></li>
         </ul>
         <div class="burger">
@@ -35,7 +35,7 @@
     <!-- Contenedor de Proyectos -->
 
     <div class="main-container">
-        <div id="home-intro" class="banner">
+        <div id="home" class="banner">
             <video autoplay muted loop>
           <source src="./assets/videos/Sequence-1.mp4" type="video/mp4" />
         </video>
@@ -44,7 +44,7 @@
             </div>
         </div>
 
-        <div id="projects-intro" class="full-bg-img full-bg-text full-bg-spaces">
+        <div id="projects" class="full-bg-img full-bg-text full-bg-spaces">
             <div class="bg-text-content">
                 <h2 data-aos-duration="1200" data-aos="fade-up">We create spaces</h2>
                 <p data-aos-duration="1200" data-aos="fade-up">
@@ -52,48 +52,155 @@
                 </p>
             </div>
         </div>
-        <!-- <div class="carousel-container">
-            <div class="carousel-slide">
-                <img id="lastClone" src="./assets/images/Torre-Galia/TG_02-min.jpg" alt="">
-                <img src="./assets/images/Torre-Galia/TG_00-min.jpg" alt="">
-                <img src="./assets/images/Torre-Galia/TG_01-min.jpg" alt="">
-                <img src="./assets/images/Torre-Galia/TG_02-min.jpg" alt="">
-                <img id="firstClone" src="./assets/images/Torre-Galia/TG_00-min.jpg" alt="">
-            </div>
-            <img class="prevBtn" src="./assets/images/icons/down-arrow.png" alt="" id="prevBtn">
-            <img class="nextBtn" src="./assets/images/icons/down-arrow.png" alt="" id="nextBtn">
-        </div> -->
 
-        <!-- <div class="full-bg-img full-bg-img4">
-            <div class="bg-text-content">
-                <h2 data-aos-duration="1200" data-aos="fade-up">Cup d'Etat</h2>
-                <p data-aos-duration="1200" data-aos="fade-up">
-                    Comercio / Monterrey, México
-                </p>
-            </div>
-        </div> -->
+        <!-- -----Torre Galia Slider----- -->
 
-        <!-- <div class="full-bg-img full-bg-img3">
-            
-        </div> -->
+        <section id="slideshow">
+            <div class="slick">
+                <div class="torre-galia torre-galia-1">
+                    <div class="bg-text-content">
+                        <h2>Torre Galia</h2>
+                        <p>Airbnb / Monterrey, Mexico</p>
+                    </div>
+                </div>
+                <div class="torre-galia torre-galia-2">
+                    <div class="bg-text-content">
+                        <h2>Torre Galia</h2>
 
-        <!-- <div class="full-bg-img full-bg-img2">
-            <div class="bg-text-content">
-                <h2 data-aos-duration="1200" data-aos="fade-up">Casa Dos Muros</h2>
-                <p data-aos-duration="1200" data-aos="fade-up">
-                    Residencial / Querétaro, México
-                </p>
+                    </div>
+                </div>
+                <div class="torre-galia torre-galia-3">
+                    <div class="bg-text-content">
+                        <h2>Airbnb / Monterrey, Mexico</h2>
+                    </div>
+                </div>
             </div>
-        </div> -->
-        <!-- <div class="full-bg-img full-bg-img6">
-            <div class="bg-text-content">
-                <h2 data-aos-duration="1200" data-aos="fade-up">Insurgentes 22</h2>
-                <p data-aos-duration="1200" data-aos="fade-up">
-                    Oficinas / CDMX, México
-                </p>
+        </section>
+
+
+        <!-- -----5Liquorstore  Slider----- -->
+
+        <section id="slideshow">
+            <div class="slick">
+                <div class="liquorstore liquorstore-1">
+                    <div class="bg-text-content">
+                        <h2>5Liquorstore</h2>
+                        <p>Comercial / San Pedro, Mexico</p>
+                    </div>
+                </div>
+                <div class="liquorstore liquorstore-2">
+                    <div class="bg-text-content">
+                        <h2>5Liquorstore</h2>
+
+                    </div>
+                </div>
+                <div class="liquorstore liquorstore-3">
+                    <div class="bg-text-content">
+                        <h2>Comercial / San Pedro, Mexico</h2>
+                    </div>
+                </div>
             </div>
-        </div> -->
-        <div id="about-us-intro" class="full-bg-img full-bg-text full-bg-about-us">
+        </section>
+
+
+        <!-- -----Cup d´Etat Slider----- -->
+
+        <section id="slideshow">
+            <div class="slick">
+                <div class="cup-d-etat cup-d-etat-1">
+                    <div class="bg-text-content">
+                        <h2>Cup d'Etat</h2>
+                        <p>Comercio / Monterrey, Mexico</p>
+                    </div>
+                </div>
+                <div class="cup-d-etat cup-d-etat-2">
+                    <div class="bg-text-content">
+                        <h2>Cup d'Etat</h2>
+
+                    </div>
+                </div>
+                <div class="cup-d-etat cup-d-etat-3">
+                    <div class="bg-text-content">
+                        <h2>Comercio / Monterrey, Mexico</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- -----Casa DS Slider----- -->
+
+        <section id="slideshow">
+            <div class="slick">
+                <div class="casa-ds casa-ds-1">
+                    <div class="bg-text-content">
+                        <h2>Casa DS</h2>
+                        <p>Residencial, Monterrey Mexico</p>
+                    </div>
+                </div>
+                <div class="casa-ds casa-ds-2">
+                    <div class="bg-text-content">
+                        <h2>Casa DS</h2>
+
+                    </div>
+                </div>
+                <div class="casa-ds casa-ds-3">
+                    <div class="bg-text-content">
+                        <h2>Residencial, Monterrey Mexico</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- -----Casa Dos Muros Slider----- -->
+
+        <section id="slideshow">
+            <div class="slick">
+                <div class="casa-dm casa-dm-1">
+                    <div class="bg-text-content">
+                        <h2>Casa Dos Muros</h2>
+                        <p>Residencial / Querétaro, Mexico</p>
+                    </div>
+                </div>
+                <div class="casa-dm casa-dm-2">
+                    <div class="bg-text-content">
+                        <h2>Casa Dos Muros</h2>
+
+                    </div>
+                </div>
+                <div class="casa-dm casa-dm-3">
+                    <div class="bg-text-content">
+                        <h2>Residencial / Querétaro, Mexico</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- -----Insurgentes 22 slider----- -->
+
+        <section id="slideshow">
+            <div class="slick">
+                <div class="insurgentes insurgentes-1">
+                    <div class="bg-text-content">
+                        <h2>Insurgentes 22</h2>
+                        <p>Oficinas / CDMX, Mexico</p>
+                    </div>
+                </div>
+                <div class="insurgentes insurgentes-2">
+                    <div class="bg-text-content">
+                        <h2>Insurgentes 22</h2>
+
+                    </div>
+                </div>
+                <div class="insurgentes insurgentes-3">
+                    <div class="bg-text-content">
+                        <h2>Oficinas / CDMX, Mexico</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="about-us" class="full-bg-img full-bg-text full-bg-about-us">
             <div class="bg-text-content">
                 <h2 data-aos-duration="1200" data-aos="fade-up">About us</h2>
                 <p data-aos-duration="1200" data-aos="fade-up">
@@ -189,15 +296,11 @@
                     <li>400 Avenida José Vasconcelos</li>
                     <li>Local 1, San Pedro, NL</li>
                     <li>66220, México</li>
-                </ul>
-                <h2>
-                    Contacto
-                </h2>
-                <ul>
-                    <li>info@ragarquitectos.mx</li>
-                    <li>81.8687.3772</li>
+                    <li style="color: black;user-select: none;">.</li>
+
                 </ul>
             </div>
+
             <div class="info">
                 <h2>
                     Siguenos
@@ -210,28 +313,35 @@
                         <a href="https://www.facebook.com/rag.arquitects">Facebook</a>
                     </li>
                     <li>
-                        <a href="https://www.behance.net/gallery/75351881/RAG-Arquitectos">Behance</a
-              >
-            </li>
-            <li>
-              <a href="https://mx.linkedin.com/company/rag-arquitectos"
-                >Linkedin</a
-              >
-            </li>
-          </ul>
+                        <a href="https://www.behance.net/gallery/75351881/RAG-Arquitectos">Behance</a>
+                    </li>
+                    <li>
+                        <a href="https://mx.linkedin.com/company/rag-arquitectos">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <h2>
+                    Contacto
+                </h2>
+                <ul>
+                    <li>info@ragarquitectos.mx</li>
+                    <li>81.8687.3772</li>
+                    <li style="color: black;user-select: none;">.</li>
+                    <li style="color: black;user-select: none;">.</li>
+                </ul>
+            </div>
         </div>
-      </div>
     </div>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="./assets/js/slick.js"></script>
     <script src="./assets/js//main.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/scroll.js"></script>
-    
+
     <script>
-      AOS.init();
+        AOS.init();
     </script>
-  </body>
+</body>
+
 </html>
