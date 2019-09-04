@@ -728,27 +728,6 @@ nav .nav-links li a:hover::before {
             transform: translateY(0%);
     opacity: 1;
   }
-  /* .nav-links {
-        z-index: -1;
-        position: absolute;
-        height: 100vh;
-        top: -20%;
-        background: black;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        transform: translateY(-100%);
-        transition: 0.8s all cubic-bezier(.97, .06, .48, .86);
-        padding: 50px;
-        li {
-            opacity: 0;
-            a {
-                color: black;
-                font-size: 30px;
-            }
-        }
-    } */
   .burger {
     display: block;
     cursor: pointer;
@@ -811,6 +790,86 @@ nav .nav-links li a:hover::before {
   .main-container .full-bg-img .bg-text-content p {
     font-size: 20px;
     line-height: 20px;
+    font-weight: 400;
+  }
+  .main-container #slideshow {
+    overflow: hidden;
+  }
+  .main-container #slideshow div {
+    width: 100vw;
+    height: 100vh;
+  }
+  .main-container #slideshow div .torre-galia .bg-text-content,
+  .main-container #slideshow div .liquorstore .bg-text-content,
+  .main-container #slideshow div .casa-ds .bg-text-content,
+  .main-container #slideshow div .casa-dm .bg-text-content,
+  .main-container #slideshow div .cup-d-etat .bg-text-content,
+  .main-container #slideshow div .insurgentes .bg-text-content {
+    -webkit-transition: all 3s ease;
+    transition: all 3s ease;
+    background: yellow;
+    width: 70%;
+    height: auto;
+    color: white;
+    font-family: "Darker Grotesque", sans-serif;
+    text-align: center;
+  }
+  .main-container #slideshow div .torre-galia .bg-text-content h2,
+  .main-container #slideshow div .liquorstore .bg-text-content h2,
+  .main-container #slideshow div .casa-ds .bg-text-content h2,
+  .main-container #slideshow div .casa-dm .bg-text-content h2,
+  .main-container #slideshow div .cup-d-etat .bg-text-content h2,
+  .main-container #slideshow div .insurgentes .bg-text-content h2 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 3%;
+  }
+  .main-container #slideshow div .torre-galia .bg-text-content p,
+  .main-container #slideshow div .liquorstore .bg-text-content p,
+  .main-container #slideshow div .casa-ds .bg-text-content p,
+  .main-container #slideshow div .casa-dm .bg-text-content p,
+  .main-container #slideshow div .cup-d-etat .bg-text-content p,
+  .main-container #slideshow div .insurgentes .bg-text-content p {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .main-container #slideshow div .torre-galia-1 {
+    background: url("../images/Torre-Galia/TG_00-min.jpg");
+    background-size: cover;
+  }
+  .main-container #slideshow div .torre-galia-2 {
+    background: url("../images/Torre-Galia/TG_01-min.jpg");
+    background-size: cover;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .main-container #slideshow div .torre-galia-2 .bg-text-content h2 {
+    background: rgba(0, 0, 0, 0.342);
+  }
+  .main-container #slideshow div .torre-galia-3 {
+    background: url("../images/Torre-Galia/TG_02-min.jpg");
+    background-size: cover;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .main-container #slideshow div .torre-galia-3 .bg-text-content h2 {
+    background: rgba(0, 0, 0, 0.342);
+    font-size: 40px;
     font-weight: 400;
   }
   .main-container .full-bg-text {
