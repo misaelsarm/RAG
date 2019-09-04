@@ -18,7 +18,7 @@ $(function() {
 
         }
 
-        if ($(window).height() < 813) {
+        if ($(window).width() < 500) {
             let ragLogo = document.getElementById('logo');
             ragLogo.style.top = '7%';
             ragLogo.style.left = '12%';

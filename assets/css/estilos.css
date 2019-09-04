@@ -689,6 +689,8 @@ nav .nav-links li a:hover::before {
   }
   nav .logo {
     margin-left: 20px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
   }
   nav .nav-links {
     display: -webkit-box;
