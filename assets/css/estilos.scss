@@ -695,6 +695,22 @@ nav {
                 }
             }
         }
+        .full-bg-artistas {
+            background-image: url("../images/Artesanos.jpg");
+            .bg-text-content {
+                text-align: justify;
+                width: 90%;
+                h2 {
+                    line-height: 20px;
+                    font-size: 20px;
+                    text-align: right;
+                    text-align: center;
+                }
+                p {
+                    font-weight: 500;
+                }
+            }
+        }
         .full-bg-what-we-do {
             overflow: hidden;
             background-attachment: scroll;
@@ -760,9 +776,6 @@ nav {
                         text-align: center;
                         font-size: 30px;
                     }
-                }
-                .d3 {
-                    margin-top: -10%;
                 }
             }
         }

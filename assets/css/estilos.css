@@ -919,6 +919,22 @@ nav .nav-links li a:hover::before {
     line-height: 20px;
     font-weight: 400;
   }
+  .main-container .full-bg-artistas {
+    background-image: url("../images/Artesanos.jpg");
+  }
+  .main-container .full-bg-artistas .bg-text-content {
+    text-align: justify;
+    width: 90%;
+  }
+  .main-container .full-bg-artistas .bg-text-content h2 {
+    line-height: 20px;
+    font-size: 20px;
+    text-align: right;
+    text-align: center;
+  }
+  .main-container .full-bg-artistas .bg-text-content p {
+    font-weight: 500;
+  }
   .main-container .full-bg-what-we-do {
     overflow: hidden;
     background-attachment: scroll;
@@ -1010,9 +1026,6 @@ nav .nav-links li a:hover::before {
     text-shadow: none;
     text-align: center;
     font-size: 30px;
-  }
-  .main-container .full-bg-what-we-do .bg-text-content2 .d3 {
-    margin-top: -10%;
   }
   .main-container .contacto {
     height: 100%;
