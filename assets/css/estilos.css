@@ -66,6 +66,7 @@ nav .logo {
 }
 
 nav .nav-links {
+  margin-right: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,7 +293,7 @@ nav .nav-links li a:hover::before {
 .main-container #slideshow div .cup-d-etat .bg-text-content p,
 .main-container #slideshow div .insurgentes .bg-text-content p {
   font-size: 23px;
-  margin-top: -3%;
+  margin-top: -0.8%;
   font-weight: 400;
 }
 
@@ -434,13 +435,16 @@ nav .nav-links li a:hover::before {
   width: 40%;
   color: white;
   font-family: "Darker Grotesque", sans-serif;
-  font-weight: 400;
   text-align: left;
 }
 
 .main-container .full-bg-text .bg-text-content h2 {
-  line-height: 100px;
-  margin: 0;
+  line-height: 68px;
+  margin-bottom: 7%;
+}
+
+.main-container .full-bg-text .bg-text-content p {
+  font-weight: 500;
 }
 
 .main-container .full-bg-text-right {
@@ -501,10 +505,10 @@ nav .nav-links li a:hover::before {
 }
 
 .main-container .full-bg-what-we-do .bg-text-content {
-  margin-left: 1%;
+  margin-left: 10%;
   -webkit-transition: all 3s ease;
   transition: all 3s ease;
-  width: 40%;
+  width: 30%;
   color: black;
   font-family: "Darker Grotesque", sans-serif;
 }
@@ -515,6 +519,7 @@ nav .nav-links li a:hover::before {
   line-height: 70px;
   margin: 0;
   text-shadow: none;
+  margin-bottom: 2%;
 }
 
 .main-container .full-bg-what-we-do .bg-text-content p {
@@ -548,8 +553,7 @@ nav .nav-links li a:hover::before {
 .main-container .full-bg-what-we-do .bg-text-content2 .d1,
 .main-container .full-bg-what-we-do .bg-text-content2 .d2,
 .main-container .full-bg-what-we-do .bg-text-content2 .d3 {
-  margin: 2%;
-  padding: 10px;
+  margin: 3%;
 }
 
 .main-container .full-bg-what-we-do .bg-text-content2 .d1 h2,
@@ -650,8 +654,25 @@ nav .nav-links li a:hover::before {
   background-image: url("../images/Herrería.jpg");
 }
 
+.main-container .full-bg-about-us .bg-text-content {
+  text-align: justify;
+}
+
 .main-container .full-bg-artistas {
   background-image: url("../images/Artesanos.jpg");
+}
+
+.main-container .full-bg-artistas .bg-text-content {
+  text-align: justify;
+  width: 22%;
+}
+
+.main-container .full-bg-artistas .bg-text-content h2 {
+  text-align: right;
+}
+
+.main-container .full-bg-artistas .bg-text-content p {
+  font-weight: 500;
 }
 
 @-webkit-keyframes body {
