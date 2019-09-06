@@ -27,7 +27,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80px;
+  height: 65px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   width: 100%;
@@ -60,6 +60,8 @@ nav .logo {
   color: white;
   left: 50%;
   width: 300px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   /* height: 200px; */
 }
 
@@ -109,6 +111,7 @@ nav .nav-links li a:hover::before {
   height: 1px;
 }
 
+/* -----Video de fondo----- */
 .banner {
   width: 100%;
   height: 100vh;
@@ -165,11 +168,13 @@ nav .nav-links li a:hover::before {
   color: #d2d2d2;
 }
 
-/* -----Contenedor de proyectos----- */
-/* -----Estilos generales del contenedor----- */
+/* -----Contenedor de principal----- */
 .main-container {
   height: 100vh;
+  /* -----Slider----- */
   /* -----Imagen de fondo individual----- */
+  /* -----Area What we do----- */
+  /* -----Area de contacto----- */
 }
 
 .main-container .full-bg-img {
@@ -235,6 +240,8 @@ nav .nav-links li a:hover::before {
 .main-container #slideshow div .casa-dm,
 .main-container #slideshow div .cup-d-etat,
 .main-container #slideshow div .insurgentes {
+  cursor: -webkit-grab;
+  cursor: grab;
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -256,6 +263,7 @@ nav .nav-links li a:hover::before {
 .main-container #slideshow div .casa-dm .bg-text-content,
 .main-container #slideshow div .cup-d-etat .bg-text-content,
 .main-container #slideshow div .insurgentes .bg-text-content {
+  position: relative;
   -webkit-transition: all 3s ease;
   transition: all 3s ease;
   width: 50%;
@@ -472,7 +480,7 @@ nav .nav-links li a:hover::before {
 }
 
 .main-container .full-bg-what-we-do {
-  background-attachment: fixed;
+  overflow: hidden;
   height: 100%;
   width: 100%;
   background-position: center;
@@ -480,9 +488,9 @@ nav .nav-links li a:hover::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -490,13 +498,10 @@ nav .nav-links li a:hover::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transition: all 30s ease;
-  transition: all 30s ease;
-  /* -----Estilos de texto dentro de imagen hero----- */
 }
 
 .main-container .full-bg-what-we-do .bg-text-content {
-  margin-left: -40%;
+  margin-left: 1%;
   -webkit-transition: all 3s ease;
   transition: all 3s ease;
   width: 40%;
@@ -526,7 +531,6 @@ nav .nav-links li a:hover::before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 10px;
   -webkit-transition: all 3s ease;
   transition: all 3s ease;
   width: 100%;
@@ -548,18 +552,18 @@ nav .nav-links li a:hover::before {
   padding: 10px;
 }
 
-.main-container .full-bg-what-we-do .bg-text-content2 .d1 ul li,
-.main-container .full-bg-what-we-do .bg-text-content2 .d2 ul li,
-.main-container .full-bg-what-we-do .bg-text-content2 .d3 ul li {
-  list-style: none;
-  font-size: 20px;
-}
-
 .main-container .full-bg-what-we-do .bg-text-content2 .d1 h2,
 .main-container .full-bg-what-we-do .bg-text-content2 .d2 h2,
 .main-container .full-bg-what-we-do .bg-text-content2 .d3 h2 {
   font-weight: bold !important;
   font-size: 60px;
+}
+
+.main-container .full-bg-what-we-do .bg-text-content2 .d1 ul li,
+.main-container .full-bg-what-we-do .bg-text-content2 .d2 ul li,
+.main-container .full-bg-what-we-do .bg-text-content2 .d3 ul li {
+  list-style: none;
+  font-size: 20px;
 }
 
 .main-container .contacto {
@@ -688,11 +692,11 @@ nav .nav-links li a:hover::before {
             justify-content: flex-end;
   }
   nav .logo {
-    margin-left: 20px;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
   }
   nav .nav-links {
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -708,7 +712,7 @@ nav .nav-links li a:hover::before {
             justify-content: center;
     z-index: -1;
     width: 100%;
-    top: -20%;
+    top: -30%;
     height: 100vh;
     position: absolute;
     background: black;
@@ -726,8 +730,8 @@ nav .nav-links li a:hover::before {
     font-weight: 700;
   }
   nav .nav-active {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    -webkit-transform: translateY(1%);
+            transform: translateY(1%);
     opacity: 1;
   }
   .burger {
@@ -763,16 +767,16 @@ nav .nav-links li a:hover::before {
     }
   }
   .toggle .line1 {
-    -webkit-transform: rotate(-223deg) translate(13px, -7px);
-            transform: rotate(-223deg) translate(13px, -7px);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
     height: 2px;
   }
   .toggle .line2 {
     opacity: 0;
   }
   .toggle .line3 {
-    -webkit-transform: rotate(223deg) translate(3px, -3px);
-            transform: rotate(223deg) translate(3px, -3px);
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
     height: 2px;
   }
   .banner .content p {
@@ -809,7 +813,6 @@ nav .nav-links li a:hover::before {
   .main-container #slideshow div .insurgentes .bg-text-content {
     -webkit-transition: all 3s ease;
     transition: all 3s ease;
-    background: yellow;
     width: 70%;
     height: auto;
     color: white;

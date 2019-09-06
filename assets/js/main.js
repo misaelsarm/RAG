@@ -3,15 +3,6 @@ const work = document.getElementById('work');
 const about = document.getElementById('about');
 const contact = document.getElementById('contact');
 const logo = document.getElementById('logo');
-//const text = document.getElementsByClassName('bg-text-content');
-//console.log(text);
-/* for (var i = 0; i <= text.length; i++) {
-    console.log(text[i]);
-    text[i].style.color = 'red';
-    text[i].style.background = 'white';
-} */
-//text.style.opacity = '0'; 
-//text.style.transform = 'translateY(200px)';
 
 logo.style.opacity = '0';
 
@@ -85,20 +76,28 @@ const navSlide = () => {
         burger.classList.toggle('toggle');
     });
 
+    const about = document.getElementById('about');
 
+    about.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.7}s`;
+            }
 
+        });
+        burger.classList.toggle('toggle');
+    })
 }
 
 navSlide();
-
-
-
 
 $(document).ready(() => {
     $('#slideshow .slick').slick({
         speed: 1000,
         dots: true,
         arrows: true,
-
     });
 });
