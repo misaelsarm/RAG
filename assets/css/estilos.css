@@ -306,12 +306,12 @@ nav .nav-scroll li a:hover {
 }
 
 .main-container #slideshow div .torre-galia-1 {
-  background: url("../images/Torre-Galia/TG_00-min.jpg");
+  background: url("../images/Torre-Galia/test.jpg");
   background-size: cover;
 }
 
 .main-container #slideshow div .torre-galia-2 {
-  background: url("../images/Torre-Galia/TG_01-min.jpg");
+  background: url("../images/Torre-Galia/test.jpg");
   background-size: cover;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -329,7 +329,7 @@ nav .nav-scroll li a:hover {
 }
 
 .main-container #slideshow div .torre-galia-3 {
-  background: url("../images/Torre-Galia/TG_02-min.jpg");
+  background: url("../images/Torre-Galia/test.jpg");
   background-size: cover;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
