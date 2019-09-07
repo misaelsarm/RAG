@@ -101,3 +101,21 @@ $(document).ready(() => {
         arrows: true,
     });
 });
+
+$(window).scroll(function() {
+    navScroll = document.querySelector('.nav-links');
+
+    /* contactInfo = document.getElementById('contact-info');
+    if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+
+        contactInfo.style.backgroundColor = 'black';
+    } else {
+        contactInfo.style.backgroundColor = 'white';
+    } */
+
+    if ($(window).scrollTop() > 6600 && $(window).scrollTop() < 7000) {
+        navScroll.classList.add('nav-scroll');
+    } else {
+        navScroll.classList.remove('nav-scroll');
+    }
+});
