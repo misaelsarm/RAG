@@ -523,10 +523,11 @@ nav .nav-links li a:hover::before {
 }
 
 .main-container .full-bg-what-we-do .bg-text-content p {
-  width: 65%;
+  width: 60%;
   font-weight: 300;
   margin: 0;
   font-size: 22px;
+  text-align: justify;
 }
 
 .main-container .full-bg-what-we-do .bg-text-content2 {
@@ -976,6 +977,7 @@ nav .nav-links li a:hover::before {
     text-align: center;
   }
   .main-container .full-bg-what-we-do .bg-text-content p {
+    width: 100%;
     text-align: center;
     font-weight: 300;
     margin: 0;
