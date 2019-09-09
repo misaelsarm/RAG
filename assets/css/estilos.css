@@ -236,6 +236,8 @@ nav .nav-scroll li a:hover {
 .main-container #slideshow div {
   width: 100vw;
   height: 100vh;
+  /* -----Torre Galia----- */
+  /* -----5Liquorstore----- */
   /* -----Cup d etat----- */
   /* -----Casa DS----- */
   /* -----Casa DM----- */
@@ -312,39 +314,41 @@ nav .nav-scroll li a:hover {
 .main-container #slideshow div .torre-galia-2 {
   background: url("../images/Torre-Galia/TG_01.jpg");
   background-size: cover;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.main-container #slideshow div .torre-galia-2 .bg-text-content h2 {
-  background: rgba(0, 0, 0, 0.342);
 }
 
 .main-container #slideshow div .torre-galia-3 {
   background: url("../images/Torre-Galia/TG_02.jpg");
   background-size: cover;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
-.main-container #slideshow div .torre-galia-3 .bg-text-content h2 {
-  background: rgba(0, 0, 0, 0.342);
-  font-size: 40px;
-  font-weight: 400;
+.main-container #slideshow div .torre-galia-4 {
+  background: url("../images/Torre-Galia/TG_03.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .torre-galia-5 {
+  background: url("../images/Torre-Galia/TG_04.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .torre-galia-6 {
+  background: url("../images/Torre-Galia/TG_05.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .torre-galia-7 {
+  background: url("../images/Torre-Galia/TG_06.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .torre-galia-8 {
+  background: url("../images/Torre-Galia/TG_07.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .torre-galia-9 {
+  background: url("../images/Torre-Galia/TG_08.jpg");
+  background-size: cover;
 }
 
 .main-container #slideshow div .liquorstore-1 {
@@ -359,6 +363,16 @@ nav .nav-scroll li a:hover {
 
 .main-container #slideshow div .liquorstore-3 {
   background: url("../images/5-Liquorstore/5L_02.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .liquorstore-4 {
+  background: url("../images/5-Liquorstore/5L_03.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .liquorstore-5 {
+  background: url("../images/5-Liquorstore/5L_04.jpg");
   background-size: cover;
 }
 
@@ -377,6 +391,11 @@ nav .nav-scroll li a:hover {
   background-size: cover;
 }
 
+.main-container #slideshow div .cup-d-etat-4 {
+  background: url("../images/Cup-d-Etat/CE_03.jpg");
+  background-size: cover;
+}
+
 .main-container #slideshow div .casa-ds-1 {
   background: url("../images/Casa-DS/DS_00.jpg");
   background-size: cover;
@@ -389,6 +408,26 @@ nav .nav-scroll li a:hover {
 
 .main-container #slideshow div .casa-ds-3 {
   background: url("../images/Casa-DS/DS_02.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .casa-ds-4 {
+  background: url("../images/Casa-DS/DS_03.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .casa-ds-5 {
+  background: url("../images/Casa-DS/DS_04.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .casa-ds-6 {
+  background: url("../images/Casa-DS/DS_05.jpg");
+  background-size: cover;
+}
+
+.main-container #slideshow div .casa-ds-7 {
+  background: url("../images/Casa-DS/DS_06.jpg");
   background-size: cover;
 }
 

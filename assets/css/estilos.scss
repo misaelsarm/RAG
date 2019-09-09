@@ -220,6 +220,7 @@ nav {
                     }
                 }
             }
+            /* -----Torre Galia----- */
             .torre-galia-1 {
                 background: url('../images/Torre-Galia/TG_00.jpg');
                 background-size: cover;
@@ -227,29 +228,36 @@ nav {
             .torre-galia-2 {
                 background: url('../images/Torre-Galia/TG_01.jpg');
                 background-size: cover;
-                display: flex !important;
-                align-items: flex-end;
-                justify-content: flex-end;
-                .bg-text-content {
-                    h2 {
-                        background: rgba(0, 0, 0, 0.342);
-                    }
-                }
             }
             .torre-galia-3 {
                 background: url('../images/Torre-Galia/TG_02.jpg');
                 background-size: cover;
-                display: flex !important;
-                align-items: flex-end;
-                justify-content: flex-end;
-                .bg-text-content {
-                    h2 {
-                        background: rgba(0, 0, 0, 0.342);
-                        font-size: 40px;
-                        font-weight: 400;
-                    }
-                }
             }
+            .torre-galia-4 {
+                background: url('../images/Torre-Galia/TG_03.jpg');
+                background-size: cover;
+            }
+            .torre-galia-5 {
+                background: url('../images/Torre-Galia/TG_04.jpg');
+                background-size: cover;
+            }
+            .torre-galia-6 {
+                background: url('../images/Torre-Galia/TG_05.jpg');
+                background-size: cover;
+            }
+            .torre-galia-7 {
+                background: url('../images/Torre-Galia/TG_06.jpg');
+                background-size: cover;
+            }
+            .torre-galia-8 {
+                background: url('../images/Torre-Galia/TG_07.jpg');
+                background-size: cover;
+            }
+            .torre-galia-9 {
+                background: url('../images/Torre-Galia/TG_08.jpg');
+                background-size: cover;
+            }
+            /* -----5Liquorstore----- */
             .liquorstore-1 {
                 background: url('../images/5-Liquorstore/5L_00.jpg');
                 background-size: cover;
@@ -260,6 +268,14 @@ nav {
             }
             .liquorstore-3 {
                 background: url('../images/5-Liquorstore/5L_02.jpg');
+                background-size: cover;
+            }
+            .liquorstore-4 {
+                background: url('../images/5-Liquorstore/5L_03.jpg');
+                background-size: cover;
+            }
+            .liquorstore-5 {
+                background: url('../images/5-Liquorstore/5L_04.jpg');
                 background-size: cover;
             }
             /* -----Cup d etat----- */
@@ -275,6 +291,10 @@ nav {
                 background: url('../images/Cup-d-Etat/CE_02.jpg');
                 background-size: cover;
             }
+            .cup-d-etat-4 {
+                background: url('../images/Cup-d-Etat/CE_03.jpg');
+                background-size: cover;
+            }
             /* -----Casa DS----- */
             .casa-ds-1 {
                 background: url('../images/Casa-DS/DS_00.jpg');
@@ -286,6 +306,22 @@ nav {
             }
             .casa-ds-3 {
                 background: url('../images/Casa-DS/DS_02.jpg');
+                background-size: cover;
+            }
+            .casa-ds-4 {
+                background: url('../images/Casa-DS/DS_03.jpg');
+                background-size: cover;
+            }
+            .casa-ds-5 {
+                background: url('../images/Casa-DS/DS_04.jpg');
+                background-size: cover;
+            }
+            .casa-ds-6 {
+                background: url('../images/Casa-DS/DS_05.jpg');
+                background-size: cover;
+            }
+            .casa-ds-7 {
+                background: url('../images/Casa-DS/DS_06.jpg');
                 background-size: cover;
             }
             /* -----Casa DM----- */
