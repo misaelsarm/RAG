@@ -306,12 +306,12 @@ nav .nav-scroll li a:hover {
 }
 
 .main-container #slideshow div .torre-galia-1 {
-  background: url("../images/Torre-Galia/test.jpg");
+  background: url("../images/Torre-Galia/TG_00.jpg");
   background-size: cover;
 }
 
 .main-container #slideshow div .torre-galia-2 {
-  background: url("../images/Torre-Galia/test.jpg");
+  background: url("../images/Torre-Galia/TG_01.jpg");
   background-size: cover;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -329,7 +329,7 @@ nav .nav-scroll li a:hover {
 }
 
 .main-container #slideshow div .torre-galia-3 {
-  background: url("../images/Torre-Galia/test.jpg");
+  background: url("../images/Torre-Galia/TG_02.jpg");
   background-size: cover;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -349,62 +349,62 @@ nav .nav-scroll li a:hover {
 }
 
 .main-container #slideshow div .liquorstore-1 {
-  background: url("../images/5-Liquorstore/5L_00-min.jpg");
+  background: url("../images/5-Liquorstore/5L_00.jpg");
   background-size: cover;
 }
 
 .main-container #slideshow div .liquorstore-2 {
-  background: url("../images/5-Liquorstore/5L_01-min.jpg");
+  background: url("../images/5-Liquorstore/5L_01.jpg");
   background-size: cover;
 }
 
 .main-container #slideshow div .liquorstore-3 {
-  background: url("../images/5-Liquorstore/5L_02-min.jpg");
+  background: url("../images/5-Liquorstore/5L_02.jpg");
   background-size: cover;
 }
 
 .main-container #slideshow div .cup-d-etat-1 {
-  background: url("../images/Cup-d_État/CE_00.jpg");
+  background: url("../images/Cup-d-Etat/CE_00.jpg");
   background-size: cover;
 }
 
 .main-container #slideshow div .cup-d-etat-2 {
-  background: url("../images/Cup-d_État/CE_01.jpg");
+  background: url("../images/Cup-d-Etat/CE_01.jpg");
   background-size: cover;
 }
 
 .main-container #slideshow div .cup-d-etat-3 {
-  background: url("../images/Cup-d_État/CE_02.jpg");
+  background: url("../images/Cup-d-Etat/CE_02.jpg");
   background-size: cover;
 }
 
 .main-container #slideshow div .casa-ds-1 {
-  background: url("../images/Casa-DS/DS_00-min.jpg");
+  background: url("../images/Casa-DS/DS_00.jpg");
   background-size: cover;
 }
 
 .main-container #slideshow div .casa-ds-2 {
-  background: url("../images/Casa-DS/DS_01-min.jpg");
+  background: url("../images/Casa-DS/DS_01.jpg");
   background-size: cover;
 }
 
 .main-container #slideshow div .casa-ds-3 {
-  background: url("../images/Casa-DS/DS_02-min.jpg");
+  background: url("../images/Casa-DS/DS_02.jpg");
   background-size: cover;
 }
 
 .main-container #slideshow div .casa-dm-1 {
-  background: url("../images/Casa-DM/DM_00-min.jpg");
+  background: url("../images/Casa-DM/DM_00.jpg");
   background-size: cover;
 }
 
 .main-container #slideshow div .casa-dm-2 {
-  background: url("../images/Casa-DM/DM_01-min.jpg");
+  background: url("../images/Casa-DM/DM_01.jpg");
   background-size: cover;
 }
 
 .main-container #slideshow div .casa-dm-3 {
-  background: url("../images/Casa-DM/DM_02-min.jpg");
+  background: url("../images/Casa-DM/DM_02.jpg");
   background-size: cover;
 }
 
@@ -870,44 +870,6 @@ nav .nav-scroll li a:hover {
   .main-container #slideshow div .insurgentes .bg-text-content p {
     font-size: 20px;
     line-height: 20px;
-    font-weight: 400;
-  }
-  .main-container #slideshow div .torre-galia-1 {
-    background: url("../images/Torre-Galia/TG_00-min.jpg");
-    background-size: cover;
-  }
-  .main-container #slideshow div .torre-galia-2 {
-    background: url("../images/Torre-Galia/TG_01-min.jpg");
-    background-size: cover;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .main-container #slideshow div .torre-galia-2 .bg-text-content h2 {
-    background: rgba(0, 0, 0, 0.342);
-  }
-  .main-container #slideshow div .torre-galia-3 {
-    background: url("../images/Torre-Galia/TG_02-min.jpg");
-    background-size: cover;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .main-container #slideshow div .torre-galia-3 .bg-text-content h2 {
-    background: rgba(0, 0, 0, 0.342);
-    font-size: 40px;
     font-weight: 400;
   }
   .main-container .full-bg-text {
