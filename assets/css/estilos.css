@@ -933,7 +933,7 @@ nav .nav-scroll li a:hover {
   }
   .main-container .full-bg-what-we-do .bg-text-content {
     margin: auto;
-    margin-bottom: 0;
+    margin-bottom: -4%;
     -webkit-transition: all 3s ease;
     transition: all 3s ease;
     width: 70%;
@@ -947,6 +947,7 @@ nav .nav-scroll li a:hover {
     margin: 0;
     text-shadow: none;
     text-align: center;
+    margin-bottom: 7%;
   }
   .main-container .full-bg-what-we-do .bg-text-content p {
     width: 100%;
@@ -1001,6 +1002,9 @@ nav .nav-scroll li a:hover {
     text-shadow: none;
     text-align: center;
     font-size: 30px;
+  }
+  .main-container .full-bg-what-we-do .bg-text-content2 .d3 .hidden {
+    display: none;
   }
   .main-container .contacto {
     height: 100%;

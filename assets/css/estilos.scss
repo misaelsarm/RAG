@@ -710,7 +710,7 @@ nav {
             /* -----Estilos de texto dentro de imagen hero----- */
             .bg-text-content {
                 margin: auto;
-                margin-bottom: 0;
+                margin-bottom: -4%;
                 transition: all 3s ease;
                 width: 70%;
                 padding: 20px;
@@ -722,6 +722,7 @@ nav {
                     margin: 0;
                     text-shadow: none;
                     text-align: center;
+                    margin-bottom: 7%;
                 }
                 p {
                     width: 100%;
@@ -761,6 +762,11 @@ nav {
                         text-shadow: none;
                         text-align: center;
                         font-size: 30px;
+                    }
+                }
+                .d3 {
+                    .hidden {
+                        display: none;
                     }
                 }
             }

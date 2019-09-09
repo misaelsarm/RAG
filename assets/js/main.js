@@ -76,8 +76,34 @@ const navSlide = () => {
         burger.classList.toggle('toggle');
     });
 
-    const about = document.getElementById('about');
 
+    const index = document.getElementById('index');
+    index.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.7}s`;
+            }
+
+        });
+        burger.classList.toggle('toggle');
+    });
+    const work = document.getElementById('work');
+    work.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.7}s`;
+            }
+
+        });
+        burger.classList.toggle('toggle');
+    });
+    const about = document.getElementById('about');
     about.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
         navLinks.forEach((link, index) => {
@@ -89,7 +115,20 @@ const navSlide = () => {
 
         });
         burger.classList.toggle('toggle');
-    })
+    });
+    const contact = document.getElementById('contact');
+    contact.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.7}s`;
+            }
+
+        });
+        burger.classList.toggle('toggle');
+    });
 }
 
 navSlide();
