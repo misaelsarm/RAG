@@ -142,19 +142,24 @@ $(document).ready(() => {
 });
 
 $(window).scroll(function() {
+    const whatWeDo = document.querySelector('#what-we-do-intro');
+    console.log(whatWeDo);
+
+    var bounding = whatWeDo.getBoundingClientRect();
+    console.log(bounding);
+
     navScroll = document.querySelector('.nav-links');
 
-    /* contactInfo = document.getElementById('contact-info');
-    if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-
-        contactInfo.style.backgroundColor = 'black';
-    } else {
-        contactInfo.style.backgroundColor = 'white';
-    } */
-
-    if ($(window).scrollTop() > 6600 && $(window).scrollTop() < 7000) {
+    if (
+        bounding.top >= 0 &&
+        bounding.left >= 0 &&
+        bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    ) {
+        console.log('In the viewport!');
         navScroll.classList.add('nav-scroll');
     } else {
         navScroll.classList.remove('nav-scroll');
+        console.log('Not in the viewport... whomp whomp');
     }
 });
