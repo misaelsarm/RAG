@@ -1,0 +1,811 @@
+@import url("https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Darker Grotesque", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* ------Barra de navegacion------ */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  height: 6.5rem;
+}
+
+nav:hover {
+  background: black;
+}
+
+nav:hover a {
+  color: White !important;
+}
+
+nav .img-logo {
+  width: 100%;
+}
+
+nav .logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 30rem;
+}
+
+nav .nav-links {
+  margin-right: 6.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav-links li {
+  list-style: none;
+}
+
+nav .nav-links li:not(:last-child) {
+  margin-right: 8rem;
+}
+
+nav .nav-links li a {
+  position: relative;
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  text-decoration: none;
+}
+
+nav .nav-links li a::after {
+  content: "";
+  position: absolute;
+  background: #fef401;
+  width: 0;
+  left: 0;
+  bottom: -1rem;
+  height: 1px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+nav .nav-links li a:hover {
+  color: white;
+}
+
+nav .nav-links li a:hover::after {
+  width: 100%;
+}
+
+nav .nav-scroll li a {
+  color: black !important;
+}
+
+nav .nav-scroll li a:hover {
+  color: white !important;
+}
+
+.menu {
+  display: none;
+}
+
+.menu .line {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: white;
+  margin: 0.5rem;
+  -webkit-transition: 0.4s all cubic-bezier(0.97, 0.06, 0.48, 0.86);
+  transition: 0.4s all cubic-bezier(0.97, 0.06, 0.48, 0.86);
+}
+
+@media screen and (max-width: 768px) {
+  nav .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    z-index: 5;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    background: black;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: 0.8s all cubic-bezier(0.97, 0.06, 0.48, 0.86);
+    transition: 0.8s all cubic-bezier(0.97, 0.06, 0.48, 0.86);
+  }
+  nav .nav-links li {
+    margin-right: 0 !important;
+    opacity: 0;
+    margin-bottom: 3rem;
+  }
+  nav .nav-links li a {
+    font-size: 35px;
+    font-weight: 700;
+  }
+  nav .nav-active {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  .menu {
+    z-index: 5;
+    display: block;
+    cursor: pointer;
+    margin-right: 2rem;
+    margin-top: 2rem;
+  }
+  .menu .line {
+    background-color: white;
+  }
+  .toggle .line-1 {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+  .toggle .line-2 {
+    opacity: 0;
+  }
+  .toggle .line-3 {
+    -webkit-transform: translateY(-0.4rem);
+            transform: translateY(-0.4rem);
+  }
+}
+
+/* -----Video de fondo----- */
+.hero-video {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero-video-overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+
+.hero-video video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.intro {
+  width: 100vw;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.295))), url("../assets/images/Terraza.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.295)), url("../assets/images/Terraza.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro-heading {
+  margin-left: 15rem;
+  color: white;
+  width: 37%;
+}
+
+.intro-heading-title {
+  font-size: 10rem;
+  line-height: 6.5rem;
+  margin-bottom: 5rem;
+  text-shadow: 0.7px 0.7px 10px rgba(0, 0, 0, 0.356);
+}
+
+.intro-heading-description {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+.projects {
+  width: 100vw;
+  height: 100vh;
+}
+
+.projects .project {
+  cursor: -webkit-grab;
+  cursor: grab;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.projects .project-heading {
+  color: white;
+  text-align: center;
+  margin-top: -3rem;
+}
+
+.projects .project-heading-title {
+  font-size: 10rem;
+  text-shadow: 0.7px 0.7px 10px rgba(0, 0, 0, 0.356);
+}
+
+.projects .project-heading-info {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.projects .hotel-nero-1 {
+  background: url("../assets/images/01_hotel-nero/hospitality-tulum-architecture_01.jpg");
+}
+
+.projects .hotel-nero-2 {
+  background: url("../assets/images/01_hotel-nero/hospitality-tulum-architecture_02.jpg");
+}
+
+.projects .hotel-nero-3 {
+  background: url("../assets/images/01_hotel-nero/hospitality-tulum-architecture_03.jpg");
+}
+
+.projects .hotel-nero-4 {
+  background: url("../assets/images/01_hotel-nero/hospitality-tulum-architecture_04.jpg");
+}
+
+.projects .torre-eon {
+  /* &-1 {
+            background: url("../assets/images/02_torre-eon/offices-residence-architecture_01.jpg");
+        }
+        &-2 {
+            background: url("../assets/images/02_torre-eon/offices-residence-architecture_02.jpg");
+        }
+        &-3 {
+            background: url("../assets/images/02_torre-eon/offices-residence-architecture_03.jpg");
+        } */
+}
+
+.projects .residencial-pitahaya-1 {
+  background: url("../assets/images/03_residencial-pitahaya/casa-residencial-arquitecto_01.jpg");
+}
+
+.projects .residencial-pitahaya-2 {
+  background: url("../assets/images/03_residencial-pitahaya/casa-residencial-arquitecto_02.jpg");
+}
+
+.projects .residencial-pitahaya-3 {
+  background: url("../assets/images/03_residencial-pitahaya/casa-residencial-arquitecto_03.jpg");
+}
+
+.projects .residencial-pitahaya-4 {
+  background: url("../assets/images/03_residencial-pitahaya/casa-residencial-arquitecto_04.jpg");
+}
+
+.projects .residencial-pitahaya-5 {
+  background: url("../assets/images/03_residencial-pitahaya/casa-residencial-arquitecto_05.jpg");
+}
+
+.projects .residencial-pitahaya-6 {
+  background: url("../assets/images/03_residencial-pitahaya/casa-residencial-arquitecto_06.jpg");
+}
+
+.projects .residencial-pitahaya-7 {
+  background: url("../assets/images/03_residencial-pitahaya/casa-residencial-arquitecto_07.jpg");
+}
+
+.projects .casa-pinon-1 {
+  background: url("../assets/images/04_casa-pinon/casa-valle-de-bravo-arquitecto_01.jpg");
+}
+
+.projects .casa-pinon-2 {
+  background: url("../assets/images/04_casa-pinon/casa-valle-de-bravo-arquitecto_02.jpg");
+}
+
+.projects .casa-pinon-3 {
+  background: url("../assets/images/04_casa-pinon/casa-valle-de-bravo-arquitecto_03.jpg");
+}
+
+.projects .casa-pinon-4 {
+  background: url("../assets/images/04_casa-pinon/casa-valle-de-bravo-arquitecto_04.jpg");
+}
+
+.projects .casa-pinon-5 {
+  background: url("../assets/images/04_casa-pinon/casa-valle-de-bravo-arquitecto_05.jpg");
+}
+
+.projects .casa-pinon-6 {
+  background: url("../assets/images/04_casa-pinon/casa-valle-de-bravo-arquitecto_06.jpg");
+}
+
+.projects .casa-pinon-7 {
+  background: url("../assets/images/04_casa-pinon/casa-valle-de-bravo-arquitecto_07.jpg");
+}
+
+.projects .casa-pinon-8 {
+  background: url("../assets/images/04_casa-pinon/casa-valle-de-bravo-arquitecto_08.jpg");
+}
+
+.projects .casa-valledeplata-1 {
+  background: url("../assets/images/05_casa-valledeplata/casa-vacaciones-coahuila-arquitecto_01.jpg");
+}
+
+.projects .casa-valledeplata-2 {
+  background: url("../assets/images/05_casa-valledeplata/casa-vacaciones-coahuila-arquitecto_02.jpg");
+}
+
+.projects .casa-valledeplata-3 {
+  background: url("../assets/images/05_casa-valledeplata/casa-vacaciones-coahuila-arquitecto_03.jpg");
+}
+
+.projects .casa-valledeplata-4 {
+  background: url("../assets/images/05_casa-valledeplata/casa-vacaciones-coahuila-arquitecto_04.jpg");
+}
+
+.projects .casa-valledeplata-5 {
+  background: url("../assets/images/05_casa-valledeplata/casa-vacaciones-coahuila-arquitecto_05.jpg");
+}
+
+.projects .casa-valledeplata-6 {
+  background: url("../assets/images/05_casa-valledeplata/casa-vacaciones-coahuila-arquitecto_06.jpg");
+}
+
+.projects .interiorismo-1 {
+  background: url("../assets/images/06_interiorismo/interiores-design-decor-designers_01.jpg");
+}
+
+.projects .interiorismo-2 {
+  background: url("../assets/images/06_interiorismo/interiores-design-decor-designers_02.jpg");
+}
+
+.projects .interiorismo-3 {
+  background: url("../assets/images/06_interiorismo/interiores-design-decor-designers_03.jpg");
+}
+
+.projects .interiorismo-4 {
+  background: url("../assets/images/06_interiorismo/interiores-design-decor-designers_04.jpg");
+}
+
+.projects .interiorismo-5 {
+  background: url("../assets/images/06_interiorismo/interiores-design-decor-designers_05.jpg");
+}
+
+.projects .interiorismo-6 {
+  background: url("../assets/images/06_interiorismo/interiores-design-decor-designers_06.jpg");
+}
+
+.fixed-section {
+  height: 100vh;
+  background-size: cover !important;
+  background-position: center !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.fixed-section-1 {
+  background: url("../assets/images/Herreria.jpg");
+}
+
+.fixed-section-1-heading {
+  width: 40%;
+  margin-left: 15rem;
+}
+
+.fixed-section-1-heading-title {
+  font-size: 10rem;
+}
+
+.fixed-section-1-heading-info {
+  text-align: justify;
+  font-weight: 400;
+  font-size: 2.3rem;
+}
+
+.fixed-section-2 {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: url("../assets/images/Artesanos.jpg");
+}
+
+.fixed-section-2-heading {
+  width: 22%;
+  margin-right: 7rem;
+  font-size: 1.8rem;
+}
+
+.fixed-section-2-heading-title {
+  text-align: right;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.fixed-section-2-heading-info {
+  text-align: justify;
+  font-weight: 500;
+}
+
+.fixed-section-2-heading-info:nth-child(2) {
+  margin-bottom: 3rem;
+}
+
+.what-we-do {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.what-we-do .second-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.what-we-do .second-row .text-content-2,
+.what-we-do .second-row .text-content-3,
+.what-we-do .second-row .text-content-4 {
+  margin: 5rem;
+}
+
+.what-we-do .second-row .hidden {
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.what-we-do .text-content-1 {
+  margin-left: 10rem;
+  margin-top: 3rem;
+  width: 32%;
+}
+
+.what-we-do .text-content-1-title {
+  font-size: 9rem;
+}
+
+.what-we-do .text-content-1 p {
+  font-weight: 300;
+  font-size: 2.2rem;
+}
+
+.what-we-do .sub-title {
+  font-size: 6rem;
+  line-height: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.what-we-do ul li {
+  list-style: none;
+  font-size: 2rem;
+  margin-left: 4rem;
+}
+
+/* -----Area de contacto----- */
+.contacto {
+  height: 100vh;
+  background: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 1.8rem;
+  margin: 0 auto;
+}
+
+.contacto .la-astilla {
+  margin-top: -2.5rem;
+}
+
+.contacto .la-astilla img {
+  width: 3rem;
+}
+
+.contacto .info:last-child {
+  margin-top: -2.5rem;
+}
+
+.contacto .info img {
+  width: 10rem;
+}
+
+.contacto .info h2 {
+  margin-bottom: 2rem;
+  font-size: inherit;
+}
+
+.contacto .info ul li {
+  list-style: none;
+  font-weight: 400;
+}
+
+.contacto .info ul li a {
+  color: rgba(255, 255, 255, 0.521);
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.contacto .info ul li a::after {
+  content: "";
+  position: absolute;
+  background: #fef401;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 0;
+}
+
+.contacto .info ul li a:hover {
+  color: white;
+}
+
+.contacto .info ul li a:hover::after {
+  width: 100%;
+}
+
+@-webkit-keyframes body {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes body {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  @-webkit-keyframes navLinkFadeIn {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+  }
+  @keyframes navLinkFadeIn {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+  }
+  @-webkit-keyframes navLinkFadeOut {
+    from {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+    }
+  }
+  @keyframes navLinkFadeOut {
+    from {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+    }
+  }
+  .intro {
+    background-attachment: scroll;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .intro-heading {
+    color: white;
+    width: 75%;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+  .intro-heading-title {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+  }
+  .intro-heading-description {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .projects .project-heading-title {
+    font-size: 5rem;
+    margin-bottom: -1rem;
+  }
+  .projects .project-heading-info {
+    font-size: 2rem;
+  }
+  .fixed-section-1 {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .fixed-section-1-heading {
+    width: 70%;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+  .fixed-section-1-heading-title {
+    font-size: 4rem;
+  }
+  .fixed-section-1-heading-info {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .fixed-section-2-heading {
+    width: 100%;
+    font-size: 2rem;
+    margin: 2rem;
+  }
+  .fixed-section-2-heading-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .fixed-section-2-heading-info {
+    line-height: 2rem;
+  }
+  .what-we-do {
+    height: 100%;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .what-we-do .text-content-1 {
+    margin: 0;
+    width: 80%;
+    text-align: center;
+  }
+  .what-we-do .text-content-1-title {
+    font-size: 5rem;
+  }
+  .what-we-do .text-content-1 p {
+    font-weight: 300;
+    font-size: 2.2rem;
+  }
+  .what-we-do .second-row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .what-we-do .second-row .text-content-2,
+  .what-we-do .second-row .text-content-3,
+  .what-we-do .second-row .text-content-4 {
+    text-align: center;
+    margin: 2rem;
+    width: 100%;
+  }
+  .what-we-do .second-row .text-content-2 .sub-title,
+  .what-we-do .second-row .text-content-3 .sub-title,
+  .what-we-do .second-row .text-content-4 .sub-title {
+    font-size: 4rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+  }
+  .what-we-do .second-row .text-content-2 ul li,
+  .what-we-do .second-row .text-content-3 ul li,
+  .what-we-do .second-row .text-content-4 ul li {
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 0;
+  }
+  .what-we-do .second-row .hidden {
+    display: none;
+  }
+  .contacto {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contacto .info {
+    text-align: center;
+    margin: 0rem;
+    width: 40%;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

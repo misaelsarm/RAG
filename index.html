@@ -5,300 +5,216 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./assets/css/estilos.css" />
-    <link rel="stylesheet" href="./assets/css/aos.css" />
-    <link rel="stylesheet" href="./assets/css/slick.css">
-    <link rel="stylesheet" href="./assets/css/slick-theme.css">
-    <title>RAG Arquitectos</title>
+
+    <!-- <link rel="stylesheet" href="css/aos.css"> -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <meta name="description"
+        Content="Estudio de arquitectura buscando un objetivo común: generar respuestas creativas en nuestro entorno creando lugares únicos." />
+    <title>RAG Arquitectos | Diseño de Interiores y Arquitectura
+    </title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/icons/favicon.ico">
+    <!-- For apple devices -->
+    <link rel="apple-touch-icon" type="image/x-icon" href="./assets/images/icons/favicon.ico">
 </head>
 
 <body>
     <!-- Barra de navegacion -->
-
     <nav>
         <div id="logo" class="logo">
-            <img src="./assets/images/icons/Firma RAG Blanco.png" alt="" />
+            <img class="img-logo" src="./assets/images/icons/Firma RAG Blanco.png" alt="RAG Arquitectos" />
         </div>
-        <ul class="nav-links">
-            <li><a id="index" href="#home">Home</a></li>
-            <li><a id="work" href="#projects">Proyectos</a></li>
-            <li><a id="about" href="#about-us">About us</a></li>
-            <li><a id="contact" href="#contact-info">Contacto</a></li>
+        <ul id="nav-links" class="nav-links">
+            <li class="nav-link-item"><a id="index" href="#home">Home</a></li>
+            <li class="nav-link-item"><a id="work" href="#projects">Proyectos</a></li>
+            <li class="nav-link-item"><a target="_blank" href="https://la-astilla-muebles.myshopify.com/">Shop</a></li>
+            <li class="nav-link-item"><a id="about" href="#about-us">About us</a></li>
+            <li class="nav-link-item"><a id="contact" href="#contact-info">Contacto</a></li>
         </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+        <div id="menu" class="menu">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
         </div>
     </nav>
 
-    <!-- Contenedor de Proyectos -->
-
-    <div class="main-container">
-        <div id="home" class="banner">
+    <!-- Header - Seccion de hero video-->
+    <header>
+        <div id="home" class="hero-video">
             <video autoplay muted loop>
-          <source src="./assets/videos/Sequence-1.mp4" type="video/mp4" />
-        </video>
-            <div class="content">
-                <!--  <img src="./assets/images/icons/Firma RAG Blanco.png" alt=""> -->
+                <source src="./assets/videos/Sequence-1.mp4" type="video/mp4" />
+            </video>
+            <div class="hero-video-overlay">
             </div>
         </div>
+    </header>
 
-        <div id="projects" class="full-bg-img full-bg-text full-bg-spaces">
-            <div class="bg-text-content">
-                <h2 data-aos-duration="1200" data-aos="fade-up">We create spaces</h2>
-                <p data-aos-duration="1200" data-aos="fade-up">
-                    RAG es un estudio de arquitectura buscando un objetivo común: generar respuestas creativas en nuestro entorno creando lugares únicos.
+    <!-- Seccion de proyectos - Seccion principal -->
+    <main>
+        <!-- Seccion de intro - Descripcion de RAG -->
+        <section id="projects" class="intro">
+            <div class="intro-heading">
+                <h1 class="intro-heading-title" data-aos-duration="1200" data-aos="fade-up">We create spaces</h1>
+                <p class="intro-heading-description" data-aos-duration="1200" data-aos="fade-up">
+                    RAG es un estudio de arquitectura buscando un objetivo común: generar respuestas creativas en
+                    nuestro entorno creando lugares únicos.
                 </p>
             </div>
-        </div>
+        </section>
 
-        <!-- -----Torre Galia Slider----- -->
+        <!-------Hotel Nero Slider------->
 
         <section id="slideshow">
-            <div class="slick">
-                <div class="torre-galia torre-galia-1">
-                    <div class="bg-text-content">
-                        <h2>Torre Galia</h2>
-                        <p>Airbnb / Monterrey, Mexico</p>
+            <div class="slick projects">
+                <div class="project hotel-nero-1">
+                    <div class="project-heading">
+                        <h2 class="project-heading-title">Hotel Nero</h2>
+                        <p class="project-heading-info">Hospitality / Tulum, Mexico</p>
                     </div>
                 </div>
-                <div class="torre-galia torre-galia-2">
-                    <div class="bg-text-content">
-                        <!-- <h2>Torre Galia</h2> -->
-
-                    </div>
-                </div>
-                <div class="torre-galia torre-galia-3">
-                    <div class="bg-text-content">
-                        <!-- <h2>Airbnb / Monterrey, Mexico</h2> -->
-                    </div>
-                </div>
-                <div class="torre-galia torre-galia-4">
-                    <div class="bg-text-content">
-                        <!-- <h2>Airbnb / Monterrey, Mexico</h2> -->
-                    </div>
-                </div>
-                <div class="torre-galia torre-galia-5">
-                    <div class="bg-text-content">
-                        <!-- <h2>Airbnb / Monterrey, Mexico</h2> -->
-                    </div>
-                </div>
-                <div class="torre-galia torre-galia-6">
-                    <div class="bg-text-content">
-                        <!-- <h2>Airbnb / Monterrey, Mexico</h2> -->
-                    </div>
-                </div>
-                <div class="torre-galia torre-galia-7">
-                    <div class="bg-text-content">
-                        <!-- <h2>Airbnb / Monterrey, Mexico</h2> -->
-                    </div>
-                </div>
-                <div class="torre-galia torre-galia-8">
-                    <div class="bg-text-content">
-                        <!-- <h2>Airbnb / Monterrey, Mexico</h2> -->
-                    </div>
-                </div>
-                <div class="torre-galia torre-galia-9">
-                    <div class="bg-text-content">
-                        <!-- <h2>Airbnb / Monterrey, Mexico</h2> -->
-                    </div>
-                </div>
+                <div class="project hotel-nero-2"></div>
+                <div class="project hotel-nero-3"></div>
+                <div class="project hotel-nero-4"></div>
             </div>
         </section>
 
+        <!-------Torre Eon Slider----- -->
 
-        <!-- -----5Liquorstore  Slider----- -->
+        <!-- <section id="slideshow">
+            <div class="slick projects">
+                <div class="project torre-eon-1">
+                    <div class="project-heading">
+                        <h2 class="project-heading-title">Torreon Eón</h2>
+                        <p class="project-heading-info">Usos Mixtos / Monterrey, México</p>
+                    </div>
+                </div>
+                <div class="project torre-eon-2"></div>
+                <div class="project torre-eon-3"></div>
+        </section> -->
+
+        <!-------Residencial Pitahaya slider ------->
 
         <section id="slideshow">
-            <div class="slick">
-                <div class="liquorstore liquorstore-1">
-                    <div class="bg-text-content">
-                        <h2>5Liquorstore</h2>
-                        <p>Comercial / San Pedro, Mexico</p>
+            <div class="slick projects">
+                <div class="project residencial-pitahaya-1">
+                    <div class="project-heading">
+                        <h2 class="project-heading-title">Pitahaya</h2>
+                        <p class="project-heading-info">Vivienda Multifamiliar / Caborca, Mexico</p>
                     </div>
                 </div>
-                <div class="liquorstore liquorstore-2">
-                    <div class="bg-text-content">
-                        <!-- <h2>5Liquorstore</h2> -->
-
-                    </div>
-                </div>
-                <div class="liquorstore liquorstore-3">
-                    <div class="bg-text-content">
-                        <!-- <h2>Comercial / San Pedro, Mexico</h2> -->
-                    </div>
-                </div>
-                <div class="liquorstore liquorstore-4">
-                    <div class="bg-text-content">
-                        <!-- <h2>Comercial / San Pedro, Mexico</h2> -->
-                    </div>
-                </div>
-                <div class="liquorstore liquorstore-5">
-                    <div class="bg-text-content">
-                        <!-- <h2>Comercial / San Pedro, Mexico</h2> -->
-                    </div>
-                </div>
+                <div class="project residencial-pitahaya-2"></div>
+                <div class="project residencial-pitahaya-3"></div>
+                <div class="project residencial-pitahaya-4"></div>
+                <div class="project residencial-pitahaya-5"></div>
+                <div class="project residencial-pitahaya-6"></div>
+                <div class="project residencial-pitahaya-7"></div>
             </div>
         </section>
 
-
-        <!-- -----Cup d´Etat Slider----- -->
+        <!-------Casa Valle de Bravo slider ------->
 
         <section id="slideshow">
-            <div class="slick">
-                <div class="cup-d-etat cup-d-etat-1">
-                    <div class="bg-text-content">
-                        <h2>Cup d'Etat</h2>
-                        <p>Comercio / Monterrey, Mexico</p>
+            <div class="slick projects">
+                <div class="project casa-pinon-1">
+                    <div class="project-heading">
+                        <h2 class="project-heading-title">Casa Piñón</h2>
+                        <p class="project-heading-info">Vivienda Unifamiliar / Valle de Bravo,Mexico</p>
                     </div>
                 </div>
-                <div class="cup-d-etat cup-d-etat-2">
-                    <div class="bg-text-content">
-                        <!-- <h2>Cup d'Etat</h2> -->
-
-                    </div>
-                </div>
-                <div class="cup-d-etat cup-d-etat-3">
-                    <div class="bg-text-content">
-                        <!-- <h2>Comercio / Monterrey, Mexico</h2> -->
-                    </div>
-                </div>
-                <div class="cup-d-etat cup-d-etat-4">
-                    <div class="bg-text-content">
-                        <!-- <h2>Comercio / Monterrey, Mexico</h2> -->
-                    </div>
-                </div>
+                <div class="project casa-pinon-2"></div>
+                <div class="project casa-pinon-3"></div>
+                <div class="project casa-pinon-4"></div>
+                <div class="project casa-pinon-5"></div>
+                <div class="project casa-pinon-6"></div>
+                <div class="project casa-pinon-7"></div>
+                <div class="project casa-pinon-8"></div>
             </div>
         </section>
 
-        <!-- -----Casa DS Slider----- -->
+        <!------------Valle de Plata slider ----------->
 
         <section id="slideshow">
-            <div class="slick">
-                <div class="casa-ds casa-ds-1">
-                    <div class="bg-text-content">
-                        <h2>Casa DS</h2>
-                        <p>Residencial / Monterrey, Mexico</p>
+            <div class="slick projects">
+                <div class="project casa-valledeplata-1">
+                    <div class="project-heading">
+                        <h2 class="project-heading-title">Valle de Plata</h2>
+                        <p class="project-heading-info">Residencial / San Antonio de las Alazanas, Mexico</p>
                     </div>
                 </div>
-                <div class="casa-ds casa-ds-2">
-                    <div class="bg-text-content">
-                        <!-- <h2>Casa DS</h2> -->
-
-                    </div>
-                </div>
-                <div class="casa-ds casa-ds-3">
-                    <div class="bg-text-content">
-                        <!-- <h2>Residencial, Monterrey Mexico</h2> -->
-                    </div>
-                </div>
-                <div class="casa-ds casa-ds-4">
-                    <div class="bg-text-content">
-                        <!-- <h2>Residencial, Monterrey Mexico</h2> -->
-                    </div>
-                </div>
-                <div class="casa-ds casa-ds-5">
-                    <div class="bg-text-content">
-                        <!-- <h2>Residencial, Monterrey Mexico</h2> -->
-                    </div>
-                </div>
-                <div class="casa-ds casa-ds-6">
-                    <div class="bg-text-content">
-                        <!-- <h2>Residencial, Monterrey Mexico</h2> -->
-                    </div>
-                </div>
-                <div class="casa-ds casa-ds-7">
-                    <div class="bg-text-content">
-                        <!-- <h2>Residencial, Monterrey Mexico</h2> -->
-                    </div>
-                </div>
+                <div class="project casa-valledeplata-2"></div>
+                <div class="project casa-valledeplata-3"></div>
+                <div class="project casa-valledeplata-4"></div>
+                <div class="project casa-valledeplata-5"></div>
+                <div class="project casa-valledeplata-6"></div>
             </div>
         </section>
 
-
-        <!-- -----Casa Dos Muros Slider----- -->
+        <!-------Interiorismo slider----- -->
 
         <section id="slideshow">
-            <div class="slick">
-                <div class="casa-dm casa-dm-1">
-                    <div class="bg-text-content">
-                        <h2>Casa Dos Muros</h2>
-                        <p>Residencial / Querétaro, Mexico</p>
+            <div class="slick projects">
+                <div class="project interiorismo-1">
+                    <div class="project-heading">
+                        <h2 class="project-heading-title">Interiorismo</h2>
+                        <p class="project-heading-info">Diseño de Espacio</p>
                     </div>
                 </div>
-                <div class="casa-dm casa-dm-2">
-                    <div class="bg-text-content">
-                        <!-- <h2>Casa Dos Muros</h2> -->
-
-                    </div>
-                </div>
-                <div class="casa-dm casa-dm-3">
-                    <div class="bg-text-content">
-                        <!-- <h2>Residencial / Querétaro, Mexico</h2> -->
-                    </div>
-                </div>
+                <div class="project interiorismo-2"></div>
+                <div class="project interiorismo-3"></div>
+                <div class="project interiorismo-4"></div>
+                <div class="project interiorismo-5"></div>
+                <div class="project interiorismo-6"></div>
             </div>
         </section>
 
-        <!-- -----Insurgentes 22 slider----- -->
+        <!-- Seccion About us -->
 
-        <section id="slideshow">
-            <div class="slick">
-                <div class="insurgentes insurgentes-1">
-                    <div class="bg-text-content">
-                        <h2>Insurgentes 22</h2>
-                        <p>Oficinas / CDMX, Mexico</p>
-                    </div>
-                </div>
-                <div class="insurgentes insurgentes-2">
-                    <div class="bg-text-content">
-                        <!-- <h2>Insurgentes 22</h2> -->
-
-                    </div>
-                </div>
-                <div class="insurgentes insurgentes-3">
-                    <div class="bg-text-content">
-                        <!-- <h2>Oficinas / CDMX, Mexico</h2> -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div id="about-us" class="full-bg-img full-bg-text full-bg-about-us">
-            <div class="bg-text-content">
-                <h2 data-aos-duration="1200" data-aos="fade-up">About us</h2>
-                <p data-aos-duration="1200" data-aos="fade-up">
-                    Cualquier proyecto es la consecuencia de un camino que parte de las necesidades de un cliente. El proceso de desarrollo, llevado a cabo por el equipo, se realiza bajo una idea que articula toda nuestra obra: “Crear espacios donde se antoja vivir”.
+        <section id="about-us" class="fixed-section fixed-section-1">
+            <div class="fixed-section-1-heading">
+                <h2 class="fixed-section-1-heading-title" data-aos-duration="1200" data-aos="fade-up">About us</h2>
+                <p class="fixed-section-1-heading-info" data-aos-duration="1200" data-aos="fade-up">
+                    Cualquier proyecto es la consecuencia de un camino que parte de las necesidades de un cliente. El
+                    proceso de desarrollo, llevado a cabo por el equipo, se realiza bajo una idea que articula toda
+                    nuestra obra: “Crear espacios donde se antoja vivir”.
                 </p>
             </div>
-        </div>
+        </section>
 
-        <div class="full-bg-img full-bg-text-right full-bg-artistas">
-            <div class="bg-text-content">
-                <h2 data-aos-duration="1200" data-aos="fade-up">
+        <!-- Seccion artistas y artesanos -->
+
+        <section class="fixed-section fixed-section-2">
+            <div class="fixed-section-2-heading">
+                <h2 class="fixed-section-2-heading-title" data-aos-duration="1200" data-aos="fade-up">
                     Trabajando con artistas y artesanos
                 </h2>
-                <p data-aos-duration="1200" data-aos="fade-up">
-                    En todos nuestros proyectos trabajamos con artesanos de cerca para fabricar elementos específicos que forman parte del diseño, de lo general al detalle. Evidencia de la mano del artesano permanecerá explícita y embebida en nuestros proyectos. Valoramos
+                <p class="fixed-section-2-heading-info" data-aos-duration="1200" data-aos="fade-up">
+                    En todos nuestros proyectos trabajamos con artesanos de cerca para fabricar elementos específicos
+                    que forman parte del diseño, de lo general al detalle. Evidencia de la mano del artesano permanecerá
+                    explícita y embebida en nuestros proyectos. Valoramos
                     el labor del artesano mexicano y su obra
                 </p>
-                <p data-aos-duration="1200" data-aos="fade-up">
-                    El énfasis en el artesano y oficio proviene de el acercamiento al diseño de RAG, donde el trabajo con artistas y artesanos locales en nuestros proyectos nos ayuda a expresar una historia auténtica sobre el lugar en el que diseñamos.
+                <p class="fixed-section-2-heading-info" data-aos-duration="1200" data-aos="fade-up">
+                    El énfasis en el artesano y oficio proviene de el acercamiento al diseño de RAG, donde el trabajo
+                    con artistas y artesanos locales en nuestros proyectos nos ayuda a expresar una historia auténtica
+                    sobre el lugar en el que diseñamos.
                 </p>
             </div>
-        </div>
+        </section>
 
-        <div class="full-bg-what-we-do">
-            <div class="bg-text-content">
-                <h2 data-aos-duration="1200" data-aos="fade-up">What we do</h2>
+        <!-- Seccion What we do -->
+
+        <section class="what-we-do">
+            <div class="text-content-1">
+                <h2 class="text-content-1-title" data-aos-duration="1200" data-aos="fade-up">What we do</h2>
                 <p data-aos-duration="1200" data-aos="fade-up">
-                    RAG es un estudio de arquitectura buscando un objetivo común: generar respuestas creativas en nuestro entorno creando lugares únicos.
+                    RAG es un estudio de arquitectura buscando un objetivo común: generar respuestas creativas en
+                    nuestro entorno creando lugares únicos.
                 </p>
             </div>
-            <div class="bg-text-content2">
-                <div data-aos-duration="1200" data-aos="fade-up" class="d1">
-                    <h2>
+            <div class="second-row">
+                <div class="text-content-2" data-aos-duration="1200" data-aos="fade-up" class="d1">
+                    <h2 class="sub-title">
                         Arquitectura <br /> + Interiores
                     </h2>
                     <ul>
@@ -310,8 +226,8 @@
                         <li id="what-we-do-intro">Supervisión de Proyecto y Administración</li>
                     </ul>
                 </div>
-                <div data-aos-duration="1200" data-aos="fade-up" data-aos-delay="200" class="d2">
-                    <h2>
+                <div class="text-content-3" data-aos-duration="1200" data-aos="fade-up" data-aos-delay="200" class="d2">
+                    <h2 class="sub-title">
                         Dirección <br /> Creativa
                     </h2>
                     <ul>
@@ -322,11 +238,11 @@
                         <li>Página Web</li>
                     </ul>
                 </div>
-                <div data-aos-duration="1200" data-aos="fade-up" data-aos-delay="300" class="d3">
-                    <h2>Construcción <br></h2>
+                <div class="text-content-4" data-aos-duration="1200" data-aos="fade-up" data-aos-delay="300" class="d3">
+                    <h2 class="sub-title">Construcción <br></h2>
                     <ul>
-                        <li class="hidden" style="color: white;user-select: none;">.</li>
-                        <li class="hidden" style="color: white;user-select: none;">.</li>
+                        <li class="hidden">.</li>
+                        <li class="hidden">.</li>
                         <li>Obra Civil</li>
                         <li>Instalaciones</li>
                         <li>Compras</li>
@@ -335,76 +251,76 @@
                     </ul>
                 </div>
             </div>
+        </section>
+    </main>
+
+    <!-- Footer - Seccion contacto -->
+
+    <footer id="contact-info" class="contacto">
+        <div data-aos-duration="1200" data-aos="fade-up" class="info">
+            <img src="./assets/images/icons/RAGW.png" alt="" />
+            <p>
+                Rational Architecture <br /> Group
+            </p>
         </div>
-
-        <div id="contact-info" class="contacto">
-            <div data-aos-duration="1200" data-aos="fade-up" class="info">
-                <img src="./assets/images/icons/Firma RAG Blanco.png" alt="" />
-                <p>
-                    Espacios donde se <br /> antoja vivir
-                </p> <br><br><br>
-            </div>
-            <div data-aos-duration="1200" data-aos="fade-up" data-aos-delay="50" class="info">
-                <h2>Explora</h2>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#projects">Proyectos</a></li>
-                    <li><a href="#about-us">About us</a></li>
-                    <li><a href="#contact-info">Contacto</a></li>
-                </ul>
-            </div>
-            <div data-aos-duration="1200" data-aos="fade-up" data-aos-delay="100" class="info">
-                <h2>Visitanos</h2>
-
-
-                <ul>
-
-                    <li><a target="_blank" href="https://goo.gl/maps/wU62syYqUNu4bD6e7"> 400 Avenida José Vasconcelos <br> Local 1, San Pedro, NL <br> 66220, México </a> </li>
-                    <li style="color: black;user-select: none;">.</li>
-
-                </ul>
-
-
-            </div>
-
-            <div data-aos-duration="1200" data-aos="fade-up" data-aos-delay="150" class="info">
-                <h2>
-                    Siguenos
-                </h2>
-                <ul>
-                    <li>
-                        <a href="https://www.instagram.com/rag.arquitectos/">Instagram</a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/rag.arquitects">Facebook</a>
-                    </li>
-                    <li>
-                        <a href="https://www.behance.net/gallery/75351881/RAG-Arquitectos">Behance</a>
-                    </li>
-                    <li>
-                        <a href="https://mx.linkedin.com/company/rag-arquitectos">Linkedin</a>
-                    </li>
-                </ul>
-            </div>
-            <div data-aos-duration="1200" data-aos="fade-up" data-aos-delay="200" class="info">
-                <h2>
-                    Contacto
-                </h2>
-                <ul>
-                    <li><a href="mailto:info@ragarquitectos.mx">info@ragarquitectos.mx</a></li>
-                    <li><a href="tel:81-8687-3772">81.8687.3772</a></li>
-                    <li style="color: black;user-select: none;">.</li>
-                    <li style="color: black;user-select: none;">.</li>
-                </ul>
-            </div>
+        <div data-aos-duration="1200" data-aos="fade-up" data-aos-delay="50" class="info">
+            <h2>Explora</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#about-us">About us</a></li>
+                <li><a href="#contact-info">Contacto</a></li>
+            </ul>
         </div>
-    </div>
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>-->
-    <script src="./assets/js/jquery-3.4.1.min.js"></script>
-    <script src="./assets/js/slick.js"></script>
-    <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/aos.js"></script>
-    <script src="./assets/js/scroll.js"></script>
+        <div data-aos-duration="1200" data-aos="fade-up" data-aos-delay="100" class="info">
+            <h2>Visitanos</h2>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://goo.gl/maps/wU62syYqUNu4bD6e7"> 400 Avenida José Vasconcelos
+                        <br> Local 1, San Pedro, NL <br> 66220, México </a>
+                </li>
+                <li style="color: black;user-select: none;">.</li>
+            </ul>
+        </div>
+        <div data-aos-duration="1200" data-aos="fade-up" data-aos-delay="150" class="info">
+            <h2>
+                Siguenos
+            </h2>
+            <ul>
+                <li><a target="_blank" href="https://www.instagram.com/rag.arquitectos/">Instagram</a></li>
+                <li><a target="_blank" href="https://www.facebook.com/rag.arquitects">Facebook</a></li>
+                <li><a target="_blank" href="https://www.behance.net/gallery/75351881/RAG-Arquitectos">Behance</a></li>
+                <li><a target="_blank" href="https://mx.linkedin.com/company/rag-arquitectos">Linkedin</a></li>
+            </ul>
+        </div>
+        <div data-aos-duration="1200" data-aos="fade-up" data-aos-delay="200" class="info">
+            <h2>
+                Contacto
+            </h2>
+            <ul>
+                <li><a href="mailto:info@ragarquitectos.mx">info@ragarquitectos.mx</a></li>
+                <li><a href="tel:81-8687-3772">81.8687.3772</a></li>
+                <li style="color: black;user-select: none;">.</li>
+                <li style="color: black;user-select: none;">.</li>
+            </ul>
+        </div>
+        <div data-aos-duration="1200" data-aos="fade-up" data-aos-delay="200" class="info">
+            <h2>
+                Shop
+            </h2>
+            <ul>
+                <li><a href="https://la-astilla-muebles.myshopify.com/">
+                        <img src="./assets/images/icons/la astilla-sinbg.png" alt="">
+                    </a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js//main.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/scroll.js"></script>
 
     <script>
         AOS.init({

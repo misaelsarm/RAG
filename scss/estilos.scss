@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900&display=swap");
+@import "./colores";
+@import "./base/base";
+@import "./components/nav-bar";
+@import "./components/hero-video";
+
+.intro {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.295)), url("../assets/images/Terraza.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    &-heading {
+        margin-left: 15rem;
+        color: white;
+        width: 37%;
+        &-title {
+            font-size: 10rem;
+            line-height: 6.5rem;
+            margin-bottom: 5rem;
+            text-shadow: 0.7px 0.7px 10px rgba(0, 0, 0, 0.356);
+        }
+        &-description {
+            font-size: 2.3rem;
+            font-weight: 500;
+        }
+    }
+}
+
+.projects {
+    width: 100vw;
+    height: 100vh;
+    .project {
+        cursor: grab;
+        width: 100vw;
+        height: 100vh;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        background-size: cover !important;
+        background-position: center !important;
+        &-heading {
+            color: white;
+            text-align: center;
+            margin-top: -3rem;
+            &-title {
+                font-size: 10rem;
+                text-shadow: 0.7px 0.7px 10px rgba(0, 0, 0, 0.356);
+            }
+            &-info {
+                font-size: 2rem;
+                font-weight: 300;
+            }
+        }
+    }
+    .hotel-nero {
+        &-1 {
+            background: url("../assets/images/01_hotel-nero/hospitality-tulum-architecture_01.jpg");
+        }
+        &-2 {
+            background: url("../assets/images/01_hotel-nero/hospitality-tulum-architecture_02.jpg");
+        }
+        &-3 {
+            background: url("../assets/images/01_hotel-nero/hospitality-tulum-architecture_03.jpg");
+        }
+        &-4 {
+            background: url("../assets/images/01_hotel-nero/hospitality-tulum-architecture_04.jpg");
+        }
+    }
+    .torre-eon {
+        /* &-1 {
+            background: url("../assets/images/02_torre-eon/offices-residence-architecture_01.jpg");
+        }
+        &-2 {
+            background: url("../assets/images/02_torre-eon/offices-residence-architecture_02.jpg");
+        }
+        &-3 {
+            background: url("../assets/images/02_torre-eon/offices-residence-architecture_03.jpg");
+        } */
+    }
+
+    .residencial-pitahaya {
+        &-1 {
+            background: url("../assets/images/03_residencial-pitahaya/casa-residencial-arquitecto_01.jpg");
+        }
+        &-2 {
+            background: url("../assets/images/03_residencial-pitahaya/casa-residencial-arquitecto_02.jpg");
+        }
+        &-3 {
+            background: url("../assets/images/03_residencial-pitahaya/casa-residencial-arquitecto_03.jpg");
+        }
+        &-4 {
+            background: url("../assets/images/03_residencial-pitahaya/casa-residencial-arquitecto_04.jpg");
+        }
+        &-5 {
+            background: url("../assets/images/03_residencial-pitahaya/casa-residencial-arquitecto_05.jpg");
+        }
+        &-6 {
+            background: url("../assets/images/03_residencial-pitahaya/casa-residencial-arquitecto_06.jpg");
+        }
+        &-7 {
+            background: url("../assets/images/03_residencial-pitahaya/casa-residencial-arquitecto_07.jpg");
+        }
+    }
+
+    .casa-pinon {
+        &-1 {
+            background: url("../assets/images/04_casa-pinon/casa-valle-de-bravo-arquitecto_01.jpg");
+        }
+        &-2 {
+            background: url("../assets/images/04_casa-pinon/casa-valle-de-bravo-arquitecto_02.jpg");
+        }
+        &-3 {
+            background: url("../assets/images/04_casa-pinon/casa-valle-de-bravo-arquitecto_03.jpg");
+        }
+        &-4 {
+            background: url("../assets/images/04_casa-pinon/casa-valle-de-bravo-arquitecto_04.jpg");
+        }
+        &-5 {
+            background: url("../assets/images/04_casa-pinon/casa-valle-de-bravo-arquitecto_05.jpg");
+        }
+        &-6 {
+            background: url("../assets/images/04_casa-pinon/casa-valle-de-bravo-arquitecto_06.jpg");
+        }
+        &-7 {
+            background: url("../assets/images/04_casa-pinon/casa-valle-de-bravo-arquitecto_07.jpg");
+        }
+        &-8 {
+            background: url("../assets/images/04_casa-pinon/casa-valle-de-bravo-arquitecto_08.jpg");
+        }
+    }
+
+    .casa-valledeplata {
+        &-1 {
+            background: url("../assets/images/05_casa-valledeplata/casa-vacaciones-coahuila-arquitecto_01.jpg");
+        }
+        &-2 {
+            background: url("../assets/images/05_casa-valledeplata/casa-vacaciones-coahuila-arquitecto_02.jpg");
+        }
+        &-3 {
+            background: url("../assets/images/05_casa-valledeplata/casa-vacaciones-coahuila-arquitecto_03.jpg");
+        }
+        &-4 {
+            background: url("../assets/images/05_casa-valledeplata/casa-vacaciones-coahuila-arquitecto_04.jpg");
+        }
+        &-5 {
+            background: url("../assets/images/05_casa-valledeplata/casa-vacaciones-coahuila-arquitecto_05.jpg");
+        }
+        &-6 {
+            background: url("../assets/images/05_casa-valledeplata/casa-vacaciones-coahuila-arquitecto_06.jpg");
+        }
+    }
+    .interiorismo {
+        &-1 {
+            background: url("../assets/images/06_interiorismo/interiores-design-decor-designers_01.jpg");
+        }
+        &-2 {
+            background: url("../assets/images/06_interiorismo/interiores-design-decor-designers_02.jpg");
+        }
+        &-3 {
+            background: url("../assets/images/06_interiorismo/interiores-design-decor-designers_03.jpg");
+        }
+        &-4 {
+            background: url("../assets/images/06_interiorismo/interiores-design-decor-designers_04.jpg");
+        }
+        &-5 {
+            background: url("../assets/images/06_interiorismo/interiores-design-decor-designers_05.jpg");
+        }
+        &-6 {
+            background: url("../assets/images/06_interiorismo/interiores-design-decor-designers_06.jpg");
+        }
+    }
+}
+
+.fixed-section {
+    height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
+    display: flex;
+    align-items: center;
+    color: white;
+    &-1 {
+        background: url("../assets/images/Herreria.jpg");
+        &-heading {
+            width: 40%;
+            margin-left: 15rem;
+            &-title {
+                font-size: 10rem;
+            }
+            &-info {
+                text-align: justify;
+                font-weight: 400;
+                font-size: 2.3rem;
+            }
+        }
+    }
+    &-2 {
+        justify-content: flex-end;
+        background: url("../assets/images/Artesanos.jpg");
+        &-heading {
+            width: 22%;
+            margin-right: 7rem;
+            font-size: 1.8rem;
+            &-title {
+                text-align: right;
+                font-size: 1.8rem;
+                margin-bottom: 3rem;
+            }
+            &-info {
+                text-align: justify;
+                font-weight: 500;
+                &:nth-child(2) {
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+    }
+}
+
+.what-we-do {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    .second-row {
+        display: flex;
+        justify-content: center;
+        .text-content-2,
+        .text-content-3,
+        .text-content-4 {
+            margin: 5rem;
+        }
+        .hidden {
+            color: white;
+            user-select: none;
+        }
+    }
+    .text-content-1 {
+        margin-left: 10rem;
+        margin-top: 3rem;
+        width: 32%;
+        &-title {
+            font-size: 9rem;
+        }
+        p {
+            font-weight: 300;
+            font-size: 2.2rem;
+        }
+    }
+    .sub-title {
+        font-size: 6rem;
+        line-height: 5rem;
+        margin-bottom: 1.5rem;
+    }
+    ul {
+        li {
+            list-style: none;
+            font-size: 2rem;
+            margin-left: 4rem;
+        }
+    }
+}
+
+/* -----Area de contacto----- */
+.contacto {
+    height: 100vh;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    align-items: center;
+    transition: all 0.5s ease;
+    flex-wrap: wrap;
+    font-size: 1.8rem;
+    margin: 0 auto;
+    .la-astilla {
+        margin-top: -2.5rem;
+        img {
+            width: 3rem;
+        }
+    }
+    .info {
+        &:last-child {
+            margin-top: -2.5rem;
+        }
+        img {
+            width: 10rem;
+        }
+        h2 {
+            margin-bottom: 2rem;
+            font-size: inherit;
+        }
+        ul {
+            li {
+                list-style: none;
+                font-weight: 400;
+                a {
+                    color: rgba(255, 255, 255, 0.521);
+                    text-decoration: none;
+                    position: relative;
+                    transition: all 0.5s ease;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        background: rgb(254, 244, 1);
+                        width: 0;
+                        left: 0;
+                        bottom: 0;
+                        height: 1px;
+                        transition: all 0.5s ease;
+                        z-index: 0;
+                    }
+                    &:hover {
+                        color: white;
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes body {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    @keyframes navLinkFadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes navLinkFadeOut {
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        to {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+    }
+
+    .intro {
+        background-attachment: scroll;
+        align-items: flex-end;
+        &-heading {
+            color: white;
+            width: 75%;
+            margin-left: 2rem;
+            margin-bottom: 2rem;
+            &-title {
+                font-size: 4rem;
+                line-height: 4rem;
+                margin-bottom: 1rem;
+            }
+            &-description {
+                font-size: 2rem;
+                line-height: 2rem;
+            }
+        }
+    }
+
+    .projects {
+        .project {
+            &-heading {
+                &-title {
+                    font-size: 5rem;
+                    margin-bottom: -1rem;
+                }
+                &-info {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    .fixed-section {
+        &-1 {
+            align-items: flex-end;
+            &-heading {
+                width: 70%;
+                margin-left: 2rem;
+                margin-bottom: 2rem;
+                &-title {
+                    font-size: 4rem;
+                }
+                &-info {
+                    font-size: 2rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+        &-2 {
+            &-heading {
+                width: 100%;
+                font-size: 2rem;
+                margin: 2rem;
+                &-title {
+                    text-align: center;
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+                &-info {
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+
+    .what-we-do {
+        height: 100%;
+        padding: 0;
+        align-items: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        .text-content-1 {
+            margin: 0;
+            width: 80%;
+            text-align: center;
+            &-title {
+                font-size: 5rem;
+            }
+            p {
+                font-weight: 300;
+                font-size: 2.2rem;
+            }
+        }
+        .second-row {
+            flex-wrap: wrap;
+            .text-content-2,
+            .text-content-3,
+            .text-content-4 {
+                text-align: center;
+                margin: 2rem;
+                width: 100%;
+                .sub-title {
+                    font-size: 4rem;
+                    line-height: 3rem;
+                    margin-bottom: 1rem;
+                }
+                ul {
+                    li {
+                        text-align: center;
+                        font-size: 2rem;
+                        margin-left: 0;
+                    }
+                }
+            }
+            .hidden {
+                display: none;
+            }
+        }
+    }
+
+    .contacto {
+        flex-wrap: wrap;
+        .info {
+            text-align: center;
+            margin: 0rem;
+            width: 40%;
+        }
+    }
+}
