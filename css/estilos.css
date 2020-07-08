@@ -18,6 +18,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /* ------Barra de navegacion------ */
@@ -34,7 +35,7 @@ nav {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   height: 6.5rem;
 }
@@ -176,7 +177,6 @@ nav .nav-scroll li a:hover {
     display: block;
     cursor: pointer;
     margin-right: 2rem;
-    margin-top: 2rem;
   }
   .menu .line {
     background-color: white;
@@ -223,7 +223,6 @@ nav .nav-scroll li a:hover {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.295)), url("../assets/images/Terraza.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,16 +304,16 @@ nav .nav-scroll li a:hover {
   background: url("../assets/images/01_hotel-nero/hospitality-tulum-architecture_04.jpg");
 }
 
-.projects .torre-eon {
-  /* &-1 {
-            background: url("../assets/images/02_torre-eon/offices-residence-architecture_01.jpg");
-        }
-        &-2 {
-            background: url("../assets/images/02_torre-eon/offices-residence-architecture_02.jpg");
-        }
-        &-3 {
-            background: url("../assets/images/02_torre-eon/offices-residence-architecture_03.jpg");
-        } */
+.projects .torre-eon-1 {
+  background: url("../assets/images/02_torre-eon/offices-residence-architecture_01.jpeg");
+}
+
+.projects .torre-eon-2 {
+  background: url("../assets/images/02_torre-eon/offices-residence-architecture_02.jpeg");
+}
+
+.projects .torre-eon-3 {
+  background: url("../assets/images/02_torre-eon/offices-residence-architecture_03.jpeg");
 }
 
 .projects .residencial-pitahaya-1 {
@@ -465,8 +464,8 @@ nav .nav-scroll li a:hover {
 }
 
 .fixed-section-2-heading {
+  margin-left: 73%;
   width: 22%;
-  margin-right: 7rem;
   font-size: 1.8rem;
 }
 
@@ -702,6 +701,8 @@ nav .nav-scroll li a:hover {
     width: 75%;
     margin-left: 2rem;
     margin-bottom: 2rem;
+    position: absolute;
+    bottom: 0;
   }
   .intro-heading-title {
     font-size: 4rem;
@@ -725,6 +726,8 @@ nav .nav-scroll li a:hover {
             align-items: flex-end;
   }
   .fixed-section-1-heading {
+    position: absolute;
+    bottom: 0;
     width: 70%;
     margin-left: 2rem;
     margin-bottom: 2rem;
@@ -737,7 +740,7 @@ nav .nav-scroll li a:hover {
     line-height: 2rem;
   }
   .fixed-section-2-heading {
-    width: 100%;
+    width: auto;
     font-size: 2rem;
     margin: 2rem;
   }

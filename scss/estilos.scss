@@ -10,7 +10,6 @@
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.295)), url("../assets/images/Terraza.jpg");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     display: flex;
     align-items: center;
     &-heading {
@@ -71,15 +70,15 @@
         }
     }
     .torre-eon {
-        /* &-1 {
-            background: url("../assets/images/02_torre-eon/offices-residence-architecture_01.jpg");
+        &-1 {
+            background: url("../assets/images/02_torre-eon/offices-residence-architecture_01.jpeg");
         }
         &-2 {
-            background: url("../assets/images/02_torre-eon/offices-residence-architecture_02.jpg");
+            background: url("../assets/images/02_torre-eon/offices-residence-architecture_02.jpeg");
         }
         &-3 {
-            background: url("../assets/images/02_torre-eon/offices-residence-architecture_03.jpg");
-        } */
+            background: url("../assets/images/02_torre-eon/offices-residence-architecture_03.jpeg");
+        }
     }
 
     .residencial-pitahaya {
@@ -201,8 +200,8 @@
         justify-content: flex-end;
         background: url("../assets/images/Artesanos.jpg");
         &-heading {
+            margin-left: 73%;
             width: 22%;
-            margin-right: 7rem;
             font-size: 1.8rem;
             &-title {
                 text-align: right;
@@ -365,6 +364,8 @@
             width: 75%;
             margin-left: 2rem;
             margin-bottom: 2rem;
+            position: absolute;
+                bottom: 0;
             &-title {
                 font-size: 4rem;
                 line-height: 4rem;
@@ -380,6 +381,7 @@
     .projects {
         .project {
             &-heading {
+                
                 &-title {
                     font-size: 5rem;
                     margin-bottom: -1rem;
@@ -395,6 +397,8 @@
         &-1 {
             align-items: flex-end;
             &-heading {
+                position: absolute;
+                bottom: 0;
                 width: 70%;
                 margin-left: 2rem;
                 margin-bottom: 2rem;
@@ -409,7 +413,7 @@
         }
         &-2 {
             &-heading {
-                width: 100%;
+                width: auto;
                 font-size: 2rem;
                 margin: 2rem;
                 &-title {

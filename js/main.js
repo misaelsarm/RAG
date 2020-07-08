@@ -1,14 +1,32 @@
 const menu = document.getElementById('menu');
 menu.addEventListener('click', showNav);
 let opened = false;
+const navLinks = document.getElementById('nav-links');
+const navLinkItems = document.getElementsByClassName('nav-link-item');
+let body = document.getElementById('body');
+
+for (let i = 0; i < navLinkItems.length; i++) {
+    let timeOut = 50;
+    navLinkItems[i].addEventListener('click', () => {
+        
+        navLinks.classList.toggle('nav-active');
+        opened = !opened;
+        for (let i = 0; i < navLinkItems.length; i++) {
+            setTimeout(() => {
+                navLinkItems[i].style.animation = `navLinkFadeOut 0.2s ease forwards`
+            }, timeOut);
+            timeOut += 100;
+        }
+    })
+}
+
 
 /* -----------Funcion para mostrar el menu en movil----------- */
 function showNav() {
-    const navLinks = document.getElementById('nav-links');
-    const navLinkItems = document.getElementsByClassName('nav-link-item');
     navLinks.classList.toggle('nav-active');
+    body.style.overflowY = 'hidden';
     console.log(navLinkItems);
-    let timeOut = 500
+    let timeOut = 900
     opened = !opened;
     console.log(opened);
     if (opened) {
@@ -19,6 +37,7 @@ function showNav() {
             timeOut += 200;
         }
     } else {
+        
         timeOut = 50;
         for (let i = 0; i < navLinkItems.length; i++) {
             setTimeout(() => {

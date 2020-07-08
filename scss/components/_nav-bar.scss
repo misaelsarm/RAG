@@ -5,7 +5,7 @@ nav {
     align-items: center;
     transition: all 0.5s ease;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     height: 6.5rem;
     &:hover {
@@ -121,7 +121,6 @@ nav {
         display: block;
         cursor: pointer;
         margin-right: 2rem;
-        margin-top: 2rem;
         .line {
             background-color: white;
         }

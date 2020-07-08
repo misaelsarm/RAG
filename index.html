@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css">
     <!-- <link rel="stylesheet" href="css/aos.css"> -->
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/slick.css">
@@ -19,7 +20,7 @@
     <link rel="apple-touch-icon" type="image/x-icon" href="./assets/images/icons/favicon.ico">
 </head>
 
-<body>
+<body id="body">
     <!-- Barra de navegacion -->
     <nav>
         <div id="logo" class="logo">
@@ -41,19 +42,21 @@
 
     <!-- Header - Seccion de hero video-->
     <header>
-        <div id="home" class="hero-video">
-            <video autoplay muted loop>
+
+    </header>
+
+    <!-- Seccion de proyectos - Seccion principal -->
+    <main id="fullpage">
+        <div data-anchor="home" class="hero-video section">
+            <video data-keepplaying autoplay muted loop>
                 <source src="./assets/videos/Sequence-1.mp4" type="video/mp4" />
             </video>
             <div class="hero-video-overlay">
             </div>
         </div>
-    </header>
 
-    <!-- Seccion de proyectos - Seccion principal -->
-    <main>
         <!-- Seccion de intro - Descripcion de RAG -->
-        <section id="projects" class="intro">
+        <section data-anchor="projects" class="intro section">
             <div class="intro-heading">
                 <h1 class="intro-heading-title" data-aos-duration="1200" data-aos="fade-up">We create spaces</h1>
                 <p class="intro-heading-description" data-aos-duration="1200" data-aos="fade-up">
@@ -65,7 +68,7 @@
 
         <!-------Hotel Nero Slider------->
 
-        <section id="slideshow">
+        <section data-anchor="hotel-nero" class="section" id="slideshow">
             <div class="slick projects">
                 <div class="project hotel-nero-1">
                     <div class="project-heading">
@@ -95,7 +98,7 @@
 
         <!-------Residencial Pitahaya slider ------->
 
-        <section id="slideshow">
+        <section data-anchor="residencial-pitahaya" class="section" id="slideshow">
             <div class="slick projects">
                 <div class="project residencial-pitahaya-1">
                     <div class="project-heading">
@@ -114,7 +117,7 @@
 
         <!-------Casa Valle de Bravo slider ------->
 
-        <section id="slideshow">
+        <section data-anchor="casa-pinon" class="section" id="slideshow">
             <div class="slick projects">
                 <div class="project casa-pinon-1">
                     <div class="project-heading">
@@ -134,7 +137,7 @@
 
         <!------------Valle de Plata slider ----------->
 
-        <section id="slideshow">
+        <section data-anchor="casa-valledeplata" class="section" id="slideshow">
             <div class="slick projects">
                 <div class="project casa-valledeplata-1">
                     <div class="project-heading">
@@ -152,7 +155,7 @@
 
         <!-------Interiorismo slider----- -->
 
-        <section id="slideshow">
+        <section data-anchor="interiorismo" class="section" id="slideshow">
             <div class="slick projects">
                 <div class="project interiorismo-1">
                     <div class="project-heading">
@@ -170,7 +173,7 @@
 
         <!-- Seccion About us -->
 
-        <section id="about-us" class="fixed-section fixed-section-1">
+        <section data-anchor="about-us" class="section fixed-section fixed-section-1">
             <div class="fixed-section-1-heading">
                 <h2 class="fixed-section-1-heading-title" data-aos-duration="1200" data-aos="fade-up">About us</h2>
                 <p class="fixed-section-1-heading-info" data-aos-duration="1200" data-aos="fade-up">
@@ -183,7 +186,7 @@
 
         <!-- Seccion artistas y artesanos -->
 
-        <section class="fixed-section fixed-section-2">
+        <section class="section fixed-section fixed-section-2">
             <div class="fixed-section-2-heading">
                 <h2 class="fixed-section-2-heading-title" data-aos-duration="1200" data-aos="fade-up">
                     Trabajando con artistas y artesanos
@@ -204,7 +207,7 @@
 
         <!-- Seccion What we do -->
 
-        <section class="what-we-do">
+        <section class="section what-we-do">
             <div class="text-content-1">
                 <h2 class="text-content-1-title" data-aos-duration="1200" data-aos="fade-up">What we do</h2>
                 <p data-aos-duration="1200" data-aos="fade-up">
@@ -252,69 +255,72 @@
                 </div>
             </div>
         </section>
+
+        <footer data-anchor="contact-info" class="contacto">
+            <div data-aos-duration="1200" data-aos="fade-up" class="info">
+                <img src="./assets/images/icons/RAGW.png" alt="" />
+                <p>
+                    Rational Architecture <br /> Group
+                </p>
+            </div>
+            <div data-aos-duration="1200" data-aos="fade-up" data-aos-delay="50" class="info">
+                <h2>Explora</h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#about-us">About us</a></li>
+                    <li><a href="#contact-info">Contacto</a></li>
+                </ul>
+            </div>
+            <div data-aos-duration="1200" data-aos="fade-up" data-aos-delay="100" class="info">
+                <h2>Visitanos</h2>
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://goo.gl/maps/wU62syYqUNu4bD6e7"> 400 Avenida José Vasconcelos
+                            <br> Local 1, San Pedro, NL <br> 66220, México </a>
+                    </li>
+                    <li style="color: black;user-select: none;">.</li>
+                </ul>
+            </div>
+            <div data-aos-duration="1200" data-aos="fade-up" data-aos-delay="150" class="info">
+                <h2>
+                    Siguenos
+                </h2>
+                <ul>
+                    <li><a target="_blank" href="https://www.instagram.com/rag.arquitectos/">Instagram</a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/rag.arquitects">Facebook</a></li>
+                    <li><a target="_blank" href="https://www.behance.net/gallery/75351881/RAG-Arquitectos">Behance</a>
+                    </li>
+                    <li><a target="_blank" href="https://mx.linkedin.com/company/rag-arquitectos">Linkedin</a></li>
+                </ul>
+            </div>
+            <div data-aos-duration="1200" data-aos="fade-up" data-aos-delay="200" class="info">
+                <h2>
+                    Contacto
+                </h2>
+                <ul>
+                    <li><a href="mailto:info@ragarquitectos.mx">info@ragarquitectos.mx</a></li>
+                    <li><a href="tel:81-8687-3772">81.8687.3772</a></li>
+                    <li style="color: black;user-select: none;">.</li>
+                    <li style="color: black;user-select: none;">.</li>
+                </ul>
+            </div>
+            <div data-aos-duration="1200" data-aos="fade-up" data-aos-delay="200" class="info">
+                <h2>
+                    Shop
+                </h2>
+                <ul>
+                    <li><a href="https://la-astilla-muebles.myshopify.com/">
+                            <img src="./assets/images/icons/la astilla-sinbg.png" alt="">
+                        </a></li>
+                </ul>
+            </div>
+        </footer>
     </main>
 
     <!-- Footer - Seccion contacto -->
 
-    <footer id="contact-info" class="contacto">
-        <div data-aos-duration="1200" data-aos="fade-up" class="info">
-            <img src="./assets/images/icons/RAGW.png" alt="" />
-            <p>
-                Rational Architecture <br /> Group
-            </p>
-        </div>
-        <div data-aos-duration="1200" data-aos="fade-up" data-aos-delay="50" class="info">
-            <h2>Explora</h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#about-us">About us</a></li>
-                <li><a href="#contact-info">Contacto</a></li>
-            </ul>
-        </div>
-        <div data-aos-duration="1200" data-aos="fade-up" data-aos-delay="100" class="info">
-            <h2>Visitanos</h2>
-            <ul>
-                <li>
-                    <a target="_blank" href="https://goo.gl/maps/wU62syYqUNu4bD6e7"> 400 Avenida José Vasconcelos
-                        <br> Local 1, San Pedro, NL <br> 66220, México </a>
-                </li>
-                <li style="color: black;user-select: none;">.</li>
-            </ul>
-        </div>
-        <div data-aos-duration="1200" data-aos="fade-up" data-aos-delay="150" class="info">
-            <h2>
-                Siguenos
-            </h2>
-            <ul>
-                <li><a target="_blank" href="https://www.instagram.com/rag.arquitectos/">Instagram</a></li>
-                <li><a target="_blank" href="https://www.facebook.com/rag.arquitects">Facebook</a></li>
-                <li><a target="_blank" href="https://www.behance.net/gallery/75351881/RAG-Arquitectos">Behance</a></li>
-                <li><a target="_blank" href="https://mx.linkedin.com/company/rag-arquitectos">Linkedin</a></li>
-            </ul>
-        </div>
-        <div data-aos-duration="1200" data-aos="fade-up" data-aos-delay="200" class="info">
-            <h2>
-                Contacto
-            </h2>
-            <ul>
-                <li><a href="mailto:info@ragarquitectos.mx">info@ragarquitectos.mx</a></li>
-                <li><a href="tel:81-8687-3772">81.8687.3772</a></li>
-                <li style="color: black;user-select: none;">.</li>
-                <li style="color: black;user-select: none;">.</li>
-            </ul>
-        </div>
-        <div data-aos-duration="1200" data-aos="fade-up" data-aos-delay="200" class="info">
-            <h2>
-                Shop
-            </h2>
-            <ul>
-                <li><a href="https://la-astilla-muebles.myshopify.com/">
-                        <img src="./assets/images/icons/la astilla-sinbg.png" alt="">
-                    </a></li>
-            </ul>
-        </div>
-    </footer>
+
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/slick.js"></script>
@@ -325,6 +331,25 @@
     <script>
         AOS.init({
             once: true,
+        });
+    </script>
+    <script>
+        new fullpage('#fullpage', {
+            css3: true,
+            autoScrolling: true,
+            scrollingSpeed: 1300,
+            navigation: true,
+            easingcss3: 'cubic-bezier(.48,0,.12,1)',
+            anchors: [
+                'home',
+                'projects',
+                'hotel-nero',
+                'residencial-pitahaya',
+                'casa-pinon',
+                'casa-valledeplata',
+                'interiorismo',
+                'about-us',
+                'contact-info']
         });
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
